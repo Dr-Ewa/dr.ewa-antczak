@@ -573,7 +573,7 @@
         }
 
         .featured-video-portrait {
-            max-width: 560px;
+            max-width: 480px;
             margin: 0 auto;
             text-align: center;
         }
@@ -581,7 +581,7 @@
         .video-embed-wrap-portrait {
             position: relative;
             width: 100%;
-            padding-top: 177.78%;
+            padding-top: 56.25%;
             background: var(--navy);
             cursor: pointer;
             border-radius: 6px;
@@ -1782,6 +1782,39 @@
         }
 
         /* About → Read More accordion */
+        /* About: photo + text layout */
+        .about-flex {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 3rem;
+            align-items: start;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-photo img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+            object-fit: cover;
+        }
+
+        .about-text {
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .about-flex {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-photo {
+                max-width: 260px;
+                margin: 0 auto;
+            }
+        }
+
         .read-more-content {
             overflow: hidden;
             max-height: 0;
@@ -1963,7 +1996,11 @@
                 <span class="section-badge">About</span>
                 <h2 class="section-title">Understanding People. Shaping Safer Technology.</h2>
             </div>
-           <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+           <div class="about-flex">
+                <div class="about-photo">
+                    <img src="ewa-about-photo.jpg" alt="Dr. Ewa J. Antczak">
+                </div>
+                <div class="about-text">
                 <p style="color: var(--gray-300); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
                     I am a behavioural scientist, psychologist, researcher and international speaker with more than two decades of academic and professional experience studying how people think, communicate, make decisions and change behaviour.
                 </p>
@@ -2028,6 +2065,7 @@
 </div>
 
             </div>
+            </div>
         </div>
     </section>
 
@@ -2090,7 +2128,6 @@
                         <div class="video-play-btn"></div>
                     </div>
                     <div class="video-card-body">
-                        <span class="video-card-tag">Nordic Game 2026 · AI Track</span>
                         <div class="video-card-title">Psychology and Technology Behind Safer Online Spaces</div>
                     </div>
                 </div>
