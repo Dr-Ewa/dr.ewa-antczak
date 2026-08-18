@@ -1,0 +1,3568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Ewa J. Antczak - Behavioral Scientist, Registered School Psychologist, Researcher in Positive Attitude Formation, Online Safety, and Ethical AI">
+    <meta property="og:title" content="Dr. Ewa J. Antczak | Behavioral Scientist">
+    <meta property="og:description" content="Transforming digital behavior through psychology and AI. 20+ years of research, 15,000+ lives impacted.">
+    <title>Dr. Ewa J. Antczak | Behavioral Scientist & Digital Safety Expert</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Core palette — sophisticated warm editorial system */
+            --navy: #101C2C;          /* Deep Navy — dominant dark */
+            --navy-light: #1D2D44;    /* Slate Navy — secondary dark */
+            --navy-lighter: #2A3D57;  /* lighter navy tint, for subtle variation on dark */
+            --ivory: #F7F4EE;         /* Warm Ivory — primary light background */
+            --soft-white: #FCFBF8;    /* Soft White — secondary light background */
+            --charcoal: #17202A;      /* Charcoal Navy — primary text on light */
+            --slate: #5E6875;         /* Muted Slate — secondary text on light */
+            --muted-on-navy: #9FAEC2; /* muted secondary text on dark backgrounds */
+            --gold: #C5A46D;          /* Muted Gold — sparing accent */
+            --gold-dark: #A88650;     /* Darker Gold — stronger contrast accent */
+            --champagne: #EEE5D6;     /* Pale Champagne — awards / featured accents */
+            --max-width: 1200px;
+
+            /* Legacy variable names kept as aliases so existing inline styles resolve correctly */
+            --black: var(--navy);
+            --black-light: var(--navy-light);
+            --black-lighter: var(--navy-lighter);
+            --primary: var(--navy);
+            --primary-dark: var(--charcoal);
+            --primary-light: var(--gold-dark);
+            --secondary: var(--gold);
+            --secondary-dark: var(--gold-dark);
+            --accent: var(--gold-dark);
+            --white: var(--soft-white);
+            --gray-50: var(--soft-white);
+            --gray-100: var(--ivory);
+            --gray-200: var(--champagne);
+            --gray-300: var(--slate);
+            --gray-400: var(--slate);
+            --gray-500: var(--slate);
+            --gray-600: var(--slate);
+            --gray-700: var(--charcoal);
+            --gray-800: var(--charcoal);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--ivory);
+            color: var(--charcoal);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 0;
+            background: rgba(16, 28, 44, 0.92);
+            border-bottom: 1px solid rgba(197, 164, 109, 0.18);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 0.75rem 0;
+            background: rgba(16, 28, 44, 0.98);
+            box-shadow: 0 2px 12px rgba(16, 28, 44, 0.25);
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--soft-white);
+            letter-spacing: -0.02em;
+            position: relative;
+        }
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 40%;
+            height: 2px;
+            background: var(--gold);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--muted-on-navy);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link:hover {
+            color: var(--soft-white);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(180deg, var(--navy) 0%, var(--navy-light) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            color: var(--soft-white);
+        }
+
+        .hero h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(1.5rem, 3vw, 2.25rem);
+            font-weight: 600;
+            line-height: 1.4;
+            margin: 1.5rem 0;
+            color: var(--soft-white);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            margin: 1.5rem auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--gold);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+            position: relative;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .professional-title {
+            color: var(--gold);
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            margin: 1.5rem 0;
+            font-weight: 500;
+        }
+
+        .gradient-text {
+            color: var(--gold-dark);
+        }
+
+        .hero-subtitle {
+            color: var(--muted-on-navy);
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            margin: 0.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .btn-primary {
+            background: var(--ivory);
+            color: var(--navy);
+            border: 2px solid var(--ivory);
+            font-weight: 700;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: var(--soft-white);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--soft-white);
+            border: 2px solid rgba(252, 251, 248, 0.5);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--soft-white);
+            background: rgba(252, 251, 248, 0.08);
+            transform: translateY(-2px);
+        }
+
+        /* On light sections, primary/outline buttons flip to navy-on-ivory */
+        .section .btn-primary {
+            background: var(--navy);
+            color: var(--soft-white);
+            border: 2px solid var(--navy);
+        }
+
+        .section .btn-primary:hover {
+            background: var(--navy-light);
+            box-shadow: 0 6px 18px rgba(16, 28, 44, 0.25);
+        }
+
+        .section .btn-outline {
+            background: transparent;
+            color: var(--navy);
+            border: 2px solid var(--navy);
+        }
+
+        .section .btn-outline:hover {
+            background: rgba(16, 28, 44, 0.06);
+        }
+
+        /* CTA boxes are solid navy even inside light sections, so their buttons need the dark-context treatment */
+        .cta-box .btn-primary {
+            background: var(--ivory);
+            color: var(--navy);
+            border: 2px solid var(--ivory);
+        }
+
+        .cta-box .btn-primary:hover {
+            background: var(--soft-white);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+        }
+
+        .cta-box .btn-outline {
+            background: transparent;
+            color: var(--soft-white);
+            border: 2px solid rgba(252, 251, 248, 0.5);
+        }
+
+        .cta-box .btn-outline:hover {
+            border-color: var(--soft-white);
+            background: rgba(252, 251, 248, 0.1);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(197, 164, 109, 0.25);
+            position: relative;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .stat-label {
+            color: var(--muted-on-navy);
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .section {
+            padding: 5rem 2rem;
+        }
+
+        /* How I Can Help */
+        .help-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin: 3rem 0 3rem;
+        }
+
+        .help-item {
+            padding: 0 0.5rem;
+        }
+
+        .help-item:not(:first-child) {
+            border-left: 1px solid rgba(94, 104, 117, 0.15);
+            padding-left: 2.5rem;
+        }
+
+        .help-number {
+            display: block;
+            color: var(--gold-dark);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .help-item h3 {
+            color: var(--navy);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.85rem;
+            line-height: 1.35;
+        }
+
+        .help-item p {
+            color: var(--slate);
+            font-size: 0.98rem;
+            line-height: 1.7;
+        }
+
+        .help-availability {
+            text-align: center;
+            color: var(--slate);
+            font-size: 0.98rem;
+            max-width: 700px;
+            margin: 0 auto;
+            padding-top: 2.25rem;
+            border-top: 1px solid rgba(197, 164, 109, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .help-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .help-item:not(:first-child) {
+                border-left: none;
+                border-top: 1px solid rgba(94, 104, 117, 0.15);
+                padding-left: 0;
+                padding-top: 2rem;
+            }
+        }
+
+        /* Areas of Expertise */
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            margin-top: 3rem;
+        }
+
+        .expertise-item {
+            padding: 2rem 2rem;
+        }
+
+        .expertise-item:not(:nth-child(3n+1)) {
+            border-left: 1px solid rgba(94, 104, 117, 0.15);
+        }
+
+        .expertise-item:nth-child(n+4) {
+            border-top: 1px solid rgba(94, 104, 117, 0.15);
+        }
+
+        .expertise-number {
+            display: block;
+            color: var(--gold-dark);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+
+        .expertise-item h3 {
+            color: var(--navy);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            line-height: 1.35;
+        }
+
+        .expertise-item p {
+            color: var(--slate);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .expertise-item {
+                padding: 1.75rem 0;
+            }
+
+            .expertise-item:not(:nth-child(3n+1)) {
+                border-left: none;
+            }
+
+            .expertise-item:nth-child(n+4) {
+                border-top: none;
+            }
+
+            .expertise-item:not(:first-child) {
+                border-top: 1px solid rgba(94, 104, 117, 0.15);
+            }
+        }
+
+        /* Signature Keynotes */
+        .keynote-featured {
+            text-align: center;
+            max-width: 780px;
+            margin: 3rem auto 3.5rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(197, 164, 109, 0.25);
+        }
+
+        .keynote-featured .keynote-number {
+            display: block;
+            color: var(--gold-dark);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .keynote-featured h3 {
+            color: var(--navy);
+            font-size: clamp(1.5rem, 3vw, 1.9rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.35;
+        }
+
+        .keynote-featured p {
+            color: var(--slate);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .keynote-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0;
+            margin-bottom: 2rem;
+        }
+
+        .keynote-item {
+            padding: 1.75rem 2rem;
+        }
+
+        .keynote-item:nth-child(2n) {
+            border-left: 1px solid rgba(94, 104, 117, 0.15);
+        }
+
+        .keynote-item:nth-child(n+3) {
+            border-top: 1px solid rgba(94, 104, 117, 0.15);
+        }
+
+        .keynote-number {
+            display: block;
+            color: var(--gold-dark);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.65rem;
+        }
+
+        .keynote-item h3 {
+            color: var(--navy);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+            line-height: 1.4;
+        }
+
+        .keynote-item p {
+            color: var(--slate);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .keynote-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .keynote-item {
+                padding: 1.5rem 0;
+            }
+
+            .keynote-item:nth-child(2n) {
+                border-left: none;
+            }
+
+            .keynote-item:nth-child(n+3) {
+                border-top: none;
+            }
+
+            .keynote-item:not(:first-child) {
+                border-top: 1px solid rgba(94, 104, 117, 0.15);
+            }
+        }
+
+        /* See Dr. Ewa Speak */
+        .featured-video-wrap {
+            max-width: 720px;
+            margin: 2.5rem auto 0;
+        }
+
+        .featured-video-portrait {
+            max-width: 560px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .video-embed-wrap-portrait {
+            position: relative;
+            width: 100%;
+            padding-top: 177.78%;
+            background: var(--navy);
+            cursor: pointer;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .video-embed-wrap-portrait img,
+        .video-embed-wrap-portrait iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 0;
+        }
+
+        .featured-video-portrait .video-card-body {
+            padding: 0 0.5rem;
+        }
+
+        /* Dr. Ewa in Action — plain editorial photo gallery, no links/overlays */
+        .action-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+        }
+
+        .action-gallery-item {
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .action-gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Traction trust-bar */
+        .traction-section {
+            padding: 3rem 2rem;
+            background: var(--soft-white);
+            border-top: 1px solid rgba(197, 164, 109, 0.2);
+            border-bottom: 1px solid rgba(94, 104, 117, 0.12);
+        }
+
+        .traction-group {
+            text-align: center;
+            margin-bottom: 1.75rem;
+        }
+
+        .traction-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .traction-label {
+            display: block;
+            color: var(--navy);
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.6rem;
+        }
+
+        .traction-list {
+            color: var(--slate);
+            font-size: 0.95rem;
+            line-height: 2;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background: var(--champagne);
+            border: 1px solid rgba(168, 134, 80, 0.3);
+            border-radius: 4px;
+            color: var(--navy);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--navy);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            background: var(--soft-white);
+            border: 1px solid rgba(197, 164, 109, 0.25);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.25s;
+            display: block;
+            text-decoration: none;
+        }
+
+        .contact-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(16, 28, 44, 0.12);
+        }
+
+        .contact-card h3 {
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .contact-card-desc {
+            color: var(--slate);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .contact-icon {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        .contact-card a {
+            color: var(--slate);
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-card a:hover {
+            color: var(--navy);
+        }
+
+        /* Speaking Section Specific Styles */
+        .speaking-intro {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            text-align: center;
+        }
+
+        .speaking-intro p {
+            color: var(--slate);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .topic-card {
+            background: var(--soft-white);
+            border: 1px solid rgba(94, 104, 117, 0.15);
+            border-radius: 8px;
+            padding: 2rem 1.5rem;
+            transition: all 0.25s;
+            text-align: center;
+        }
+
+        .topic-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(16, 28, 44, 0.1);
+        }
+
+        .topic-card h3 {
+            color: var(--navy);
+            font-size: 1.15rem;
+            margin-bottom: 0;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+
+        .engagement-showcase {
+            margin: 3rem 0;
+        }
+
+        .engagement-item {
+            background: var(--soft-white);
+            border-left: 3px solid var(--gold);
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            transition: all 0.25s;
+            border-top: 1px solid rgba(94, 104, 117, 0.12);
+            border-right: 1px solid rgba(94, 104, 117, 0.12);
+            border-bottom: 1px solid rgba(94, 104, 117, 0.12);
+        }
+
+        .engagement-item:hover {
+            transform: translateX(3px);
+            box-shadow: 0 4px 16px rgba(16, 28, 44, 0.08);
+        }
+
+        .engagement-item h4 {
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .engagement-item h4 a {
+            transition: all 0.25s;
+            color: var(--navy);
+        }
+
+        .engagement-item h4 a:hover {
+            color: var(--gold-dark);
+        }
+
+        .engagement-item p {
+            color: var(--slate);
+        }
+
+        /* Speaking Gallery */
+        .speaking-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.25s;
+            border: 1px solid rgba(94, 104, 117, 0.2);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+            border-color: var(--gold);
+            box-shadow: 0 8px 24px rgba(16, 28, 44, 0.15);
+        }
+
+        .gallery-item a {
+            display: block;
+            position: relative;
+        }
+
+        .gallery-item a::after {
+            content: '▶';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: var(--soft-white);
+            opacity: 0;
+            transition: opacity 0.3s;
+            text-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+        }
+
+        .gallery-item:hover a::after {
+            opacity: 0.9;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: all 0.3s;
+        }
+
+        .gallery-item:hover img {
+            filter: brightness(0.75);
+        }
+
+        /* Speaking Table */
+        .speaking-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--soft-white);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(94, 104, 117, 0.15);
+        }
+
+        .speaking-table thead {
+            display: none;
+        }
+
+        .speaking-table th {
+            padding: 1rem;
+            text-align: left;
+            color: var(--navy);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.9rem;
+        }
+
+        .speaking-table td {
+            padding: 1rem;
+            color: var(--slate);
+            border-bottom: 1px solid rgba(94, 104, 117, 0.12);
+        }
+
+        .speaking-table tbody tr {
+            transition: all 0.25s;
+            position: relative;
+        }
+
+        .speaking-table tbody tr::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--gold);
+            transform: scaleY(0);
+            transition: transform 0.25s;
+        }
+
+        .speaking-table tbody tr:hover::before {
+            transform: scaleY(1);
+        }
+
+        .speaking-table tbody tr:hover {
+            background: var(--ivory);
+        }
+
+        .speaking-table a {
+            color: var(--navy);
+            text-decoration: none;
+            transition: all 0.25s;
+            font-weight: 500;
+        }
+
+        .speaking-table a:hover {
+            color: var(--gold-dark);
+        }
+
+        /* Collapsible table rows */
+        .speaking-table tbody tr.hidden-row {
+            display: none;
+            animation: fadeOut 0.3s ease-out;
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; transform: translateY(0); }
+            to { opacity: 0; transform: translateY(-10px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .show-more-btn {
+            display: block;
+            margin: 2rem auto 0;
+            padding: 0.75rem 2.25rem;
+            background: transparent;
+            border: 2px solid var(--navy);
+            border-radius: 6px;
+            color: var(--navy);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.25s;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .show-more-btn:hover {
+            background: rgba(16, 28, 44, 0.06);
+            transform: translateY(-2px);
+        }
+
+        .show-more-btn:active {
+            transform: translateY(0);
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+
+        .show-more-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .show-more-btn span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-box {
+            background: var(--navy);
+            border-radius: 10px;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box h3 {
+            color: var(--soft-white);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-box p {
+            color: var(--muted-on-navy);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Research Table Specific Styles */
+        .research-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--ivory);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(94, 104, 117, 0.15);
+        }
+
+        .research-table thead {
+            display: none;
+        }
+
+        .research-table th {
+            padding: 1rem;
+            text-align: left;
+            color: var(--navy);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.9rem;
+        }
+
+        .research-table td {
+            padding: 1rem;
+            color: var(--slate);
+            border-bottom: 1px solid rgba(94, 104, 117, 0.12);
+            vertical-align: top;
+        }
+
+        .research-table tbody tr {
+            transition: all 0.25s;
+            position: relative;
+        }
+
+        .research-table tbody tr::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--gold);
+            transform: scaleY(0);
+            transition: transform 0.25s;
+        }
+
+        .research-table tbody tr:hover::before {
+            transform: scaleY(1);
+        }
+
+        .research-table tbody tr:hover {
+            background: var(--soft-white);
+        }
+
+        .research-table a {
+            color: var(--navy);
+            text-decoration: none;
+            transition: all 0.25s;
+            font-weight: 500;
+        }
+
+        .research-table a:hover {
+            color: var(--gold-dark);
+        }
+
+        .research-table tbody tr.hidden-row {
+            display: none;
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 0.25rem;
+        }
+
+        .project-note {
+            font-size: 0.85rem;
+            color: var(--slate);
+            font-style: italic;
+            margin-top: 0.25rem;
+        }
+
+        /* Publications Table Specific Styles */
+        .publications-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--soft-white);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(94, 104, 117, 0.15);
+        }
+
+        .publications-table thead {
+            display: none;
+        }
+
+        .publications-table th {
+            padding: 1rem;
+            text-align: left;
+            color: var(--navy);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.9rem;
+        }
+
+        .publications-table td {
+            padding: 1rem;
+            color: var(--slate);
+            border-bottom: 1px solid rgba(94, 104, 117, 0.12);
+            vertical-align: top;
+            line-height: 1.8;
+        }
+
+        .publications-table tbody tr {
+            transition: all 0.25s;
+            position: relative;
+        }
+
+        .publications-table tbody tr::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--gold);
+            transform: scaleY(0);
+            transition: transform 0.25s;
+        }
+
+        .publications-table tbody tr:hover::before {
+            transform: scaleY(1);
+        }
+
+        .publications-table tbody tr:hover {
+            background: var(--ivory);
+        }
+
+        .publications-table a {
+            color: var(--navy);
+            text-decoration: none;
+            transition: all 0.25s;
+            font-weight: 500;
+        }
+
+        .publications-table a:hover {
+            color: var(--gold-dark);
+        }
+
+        .publications-table tbody tr.hidden-row {
+            display: none;
+        }
+
+        footer {
+            background: var(--navy);
+            border-top: 1px solid rgba(197, 164, 109, 0.25);
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        footer a:hover {
+            color: var(--gold) !important;
+        }
+
+        footer a:hover img {
+            opacity: 0.85;
+        }
+
+        .footer-icon {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+            border-radius: 50%;
+            background: transparent;
+        }
+
+        .footer-links a:hover .footer-icon {
+            transform: scale(1.1);
+            transition: transform 0.2s ease;
+        }
+
+        .contact-card .contact-icon {
+            display: none !important;
+        }
+
+        /* Modal styling — kept as a distinct dark overlay treatment */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(16, 28, 44, 0.7);
+        }
+
+        .modal-content {
+            background: var(--navy);
+            margin: 3% auto;
+            padding: 0;
+            border: 1px solid rgba(197, 164, 109, 0.25);
+            border-radius: 10px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+            position: relative;
+        }
+
+        .modal-header {
+            background: var(--navy-light);
+            padding: 2rem;
+            border-bottom: 1px solid rgba(197, 164, 109, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .modal-header h2 {
+            color: var(--soft-white);
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .modal-body {
+            padding: 2rem;
+            color: var(--muted-on-navy);
+            line-height: 1.8;
+        }
+
+        .modal-body h3 {
+            color: var(--gold);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .modal-body p {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-body ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-body li {
+            margin-bottom: 0.5rem;
+        }
+
+        .close {
+            color: var(--muted-on-navy);
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.25s;
+            z-index: 2;
+        }
+
+        .close:hover {
+            color: var(--gold);
+            transform: scale(1.15);
+        }
+
+        .clickable-title {
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .clickable-title:hover {
+            color: var(--gold-dark);
+        }
+
+        .modal-legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(252, 251, 248, 0.04);
+            border-radius: 6px;
+            border: 1px solid rgba(197, 164, 109, 0.15);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--muted-on-navy);
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .audience-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            background: rgba(197, 164, 109, 0.15);
+            border: 1px solid rgba(197, 164, 109, 0.3);
+            color: var(--gold);
+        }
+
+        .topic-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            background: rgba(252, 251, 248, 0.08);
+            border: 1px solid rgba(252, 251, 248, 0.25);
+            color: var(--soft-white);
+        }
+
+        .outcome-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            background: rgba(168, 134, 80, 0.18);
+            border: 1px solid rgba(168, 134, 80, 0.35);
+            color: var(--champagne);
+        }
+
+        .modal-section {
+            margin-bottom: 2rem;
+        }
+
+        .modal-section-title {
+            color: var(--gold);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        /* Highlight speaking cards that have clickable content */
+        .topic-card.highlight-click {
+            cursor: pointer;
+            border-color: var(--gold);
+            position: relative;
+        }
+
+        .topic-card.highlight-click .clickable-title {
+            color: var(--navy);
+        }
+
+        .topic-card.highlight-click::after {
+            content: "Click to view";
+            position: absolute;
+            bottom: 12px;
+            right: 14px;
+            font-size: 0.8rem;
+            color: var(--slate);
+            opacity: 0.8;
+        }
+
+        .topic-card.highlight-click:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 28px rgba(16, 28, 44, 0.15);
+        }
+
+        .topic-card.highlight-click:hover::after {
+            color: var(--gold-dark);
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero-stats {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+            }
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .speaking-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .speaking-table, .research-table, .publications-table {
+                font-size: 0.9rem;
+            }
+
+            .speaking-table th,
+            .speaking-table td,
+            .research-table th,
+            .research-table td,
+            .publications-table th,
+            .publications-table td {
+                padding: 0.75rem 0.5rem;
+            }
+
+            /* Stack table cells vertically on mobile */
+            .speaking-table thead,
+            .research-table thead,
+            .publications-table thead {
+                display: none;
+            }
+
+            .speaking-table tbody tr,
+            .research-table tbody tr,
+            .publications-table tbody tr {
+                display: block;
+                margin-bottom: 1.5rem;
+                border: 1px solid rgba(94, 104, 117, 0.15);
+                border-radius: 6px;
+            }
+
+            .speaking-table tbody td,
+            .research-table tbody td,
+            .publications-table tbody td {
+                display: block;
+                text-align: left;
+                padding: 0.75rem;
+                border: none;
+            }
+
+            .speaking-table tbody td:before,
+            .research-table tbody td:before,
+            .publications-table tbody td:before {
+                content: attr(data-label);
+                font-weight: 600;
+                color: var(--navy);
+                display: block;
+                margin-bottom: 0.25rem;
+            }
+
+            /* Fix contact icons size on mobile */
+            .contact-icon {
+                width: 20px !important;
+                height: 20px !important;
+                max-width: 20px !important;
+                max-height: 20px !important;
+            }
+
+            .contact-card h3 {
+                font-size: 0.95rem !important;
+                gap: 0.4rem !important;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+            }
+
+            .contact-card {
+                padding: 1.25rem !important;
+            }
+        }
+
+        /* Talks and Interviews (video cards) */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .video-card {
+            background: var(--soft-white);
+            border: 1px solid rgba(94, 104, 117, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.25s;
+            text-align: left;
+        }
+
+        .video-card:hover {
+            border-color: var(--gold);
+            box-shadow: 0 8px 24px rgba(16, 28, 44, 0.12);
+        }
+
+        .video-embed-wrap {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background: var(--navy);
+            cursor: pointer;
+        }
+
+        .video-embed-wrap img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-embed-wrap iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(197, 164, 109, 0.92);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+        }
+
+        .video-play-btn::after {
+            content: '';
+            border-style: solid;
+            border-width: 9px 0 9px 15px;
+            border-color: transparent transparent transparent var(--navy);
+            margin-left: 3px;
+        }
+
+        .video-card-body {
+            padding: 1.25rem 1.5rem 1.5rem;
+        }
+
+        .video-card-tag {
+            display: inline-block;
+            padding: 0.15rem 0.7rem;
+            border-radius: 4px;
+            background: var(--champagne);
+            color: var(--navy);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.6rem;
+        }
+
+        .video-card-title {
+            color: var(--navy);
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 0.35rem;
+        }
+
+        .video-card-meta {
+            color: var(--slate);
+            font-size: 0.85rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .video-card-desc {
+            color: var(--slate);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 0.9rem;
+        }
+
+        .video-card-link {
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .video-card-link:hover {
+            color: var(--gold-dark);
+            text-decoration: underline;
+        }
+
+        /* Media, Articles & Interviews */
+        .media-category {
+            margin-bottom: 3.5rem;
+        }
+
+        .media-category-title {
+            text-align: center;
+            color: var(--navy);
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .media-category-toggle {
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+        }
+
+        .media-category-toggle:hover {
+            color: var(--gold-dark);
+        }
+
+        .media-toggle-icon {
+            display: inline-block;
+            font-size: 1rem;
+            color: var(--gold-dark);
+            transition: transform 0.3s ease;
+        }
+
+        .media-category-toggle.open .media-toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .media-category-sub {
+            text-align: center;
+            color: var(--slate);
+            font-size: 0.9rem;
+            max-width: 650px;
+            margin: 0 auto 2rem;
+        }
+
+        .media-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .media-item {
+            background: var(--soft-white);
+            border: 1px solid rgba(94, 104, 117, 0.15);
+            border-radius: 6px;
+            padding: 1.1rem 1.4rem;
+            transition: all 0.25s;
+        }
+
+        .media-item:hover {
+            border-color: var(--gold);
+        }
+
+        .media-item-tag {
+            display: inline-block;
+            padding: 0.15rem 0.65rem;
+            border-radius: 4px;
+            background: var(--champagne);
+            color: var(--navy);
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .media-item-title {
+            color: var(--navy);
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+            line-height: 1.4;
+        }
+
+        .media-item-title a {
+            color: var(--navy);
+            text-decoration: none;
+        }
+
+        .media-item-title a:hover {
+            color: var(--gold-dark);
+        }
+
+        .media-item-meta {
+            color: var(--slate);
+            font-size: 0.82rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .media-item-desc {
+            color: var(--slate);
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+
+        .media-sub-list {
+            margin-top: 0.75rem;
+            padding-left: 1.1rem;
+        }
+
+        .media-sub-list li {
+            color: var(--slate);
+            font-size: 0.85rem;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .media-sub-list a {
+            color: var(--navy);
+            text-decoration: none;
+        }
+
+        .media-sub-list a:hover {
+            color: var(--gold-dark);
+            text-decoration: underline;
+        }
+
+        .media-archive-content {
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 700ms ease, opacity 700ms ease;
+        }
+
+        .media-archive-content.open {
+            max-height: 12000px;
+            opacity: 1;
+            margin-top: 1rem;
+        }
+
+        .media-view-more-btn {
+            display: block;
+            margin: 1.5rem auto 0;
+        }
+
+        /* About → Read More accordion */
+        .read-more-content {
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 600ms ease, opacity 600ms ease;
+        }
+
+        .read-more-content.open {
+            max-height: 5000px;
+            opacity: 1;
+        }
+    </style>
+
+
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container" style="justify-content: center;">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#speaking" class="nav-link">Speaking</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#media" class="nav-link">Media</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Dr. Ewa J. Antczak</h1>
+            
+            <div class="profile-image">
+               <img src="Dr. Ewa.webp" alt="Dr. Ewa J. Antczak" width="300" height="300" fetchpriority="high" decoding="async" loading="eager">
+            </div>
+            
+            <p class="professional-title">
+                Behavioural Scientist | AI Safety Expert | Consultant | International Speaker
+            </p>
+            
+            <h2>
+                Making AI and Digital Spaces Safer for People
+            </h2>
+            
+            <p class="hero-subtitle">
+                I help organizations understand human behaviour, evaluate AI in real-world contexts, and create safer digital environments.
+            </p>
+
+            <p class="hero-subtitle">
+                Responsible AI &bull; AI Validation &bull; Gaming &bull; Online Safety &bull; Cybersecurity & Defence &bull; Wellbeing
+            </p>
+
+            <p class="hero-subtitle">
+                Consulting &bull; Workshops &bull; Speaking
+            </p>
+            
+            <div>
+                <a href="mailto:ewa@felixagaming.com" class="btn btn-primary">BOOK ME TO SPEAK</a>
+                <a href="mailto:ewa@felixagaming.com" class="btn btn-outline">WORK WITH ME</a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Years Research</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15K+</div>
+                    <div class="stat-label">Youth Helped</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Global</div>
+                    <div class="stat-label">Speaking Reach</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="how-i-can-help">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Services</span>
+                <h2 class="section-title">How I Can Help</h2>
+            </div>
+
+            <div class="help-grid">
+                <div class="help-item">
+                    <span class="help-number">01</span>
+                    <h3>Consulting &amp; Advisory</h3>
+                    <p>Behavioural science expertise for organizations working with AI, digital platforms, online safety, human behaviour and wellbeing.</p>
+                </div>
+                <div class="help-item">
+                    <span class="help-number">02</span>
+                    <h3>Workshops &amp; Training</h3>
+                    <p>Interactive, research-informed workshops that turn behavioural science into practical strategies for teams, leaders and organizations.</p>
+                </div>
+                <div class="help-item">
+                    <span class="help-number">03</span>
+                    <h3>Speaking &amp; Keynotes</h3>
+                    <p>Engaging talks on responsible AI, AI evaluation, online safety, gaming, digital wellbeing and human behaviour.</p>
+                </div>
+            </div>
+
+            <p class="help-availability">
+                Available for corporate, technology, public-sector, education and conference engagements.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="expertise" style="background: var(--soft-white);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Expertise</span>
+                <h2 class="section-title">Areas of Expertise</h2>
+                <p style="color: var(--slate); max-width: 700px; margin: 0 auto;">
+                    Behavioural science applied to the challenges shaping AI, digital safety and human performance.
+                </p>
+            </div>
+
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <span class="expertise-number">01</span>
+                    <h3>Responsible &amp; Ethical AI</h3>
+                    <p>Helping organizations understand the human and behavioural dimensions of responsible AI, including trust, human oversight, behavioural risk and real-world impact.</p>
+                </div>
+                <div class="expertise-item">
+                    <span class="expertise-number">02</span>
+                    <h3>AI Validation &amp; Behavioural Evaluation</h3>
+                    <p>Human-grounded evaluation of how AI interprets behaviour, makes judgments and performs in realistic human contexts.</p>
+                </div>
+                <div class="expertise-item">
+                    <span class="expertise-number">03</span>
+                    <h3>Online Safety &amp; Behavioural Intelligence</h3>
+                    <p>Understanding behavioural patterns, escalation, toxicity and digital conflict to help create safer online environments before harm escalates.</p>
+                </div>
+                <div class="expertise-item">
+                    <span class="expertise-number">04</span>
+                    <h3>Cybersecurity &amp; Defence</h3>
+                    <p>Applying behavioural science to human factors, behavioural risk, resilience, decision-making under pressure and human&ndash;AI interaction in cyber and defence environments.</p>
+                </div>
+                <div class="expertise-item">
+                    <span class="expertise-number">05</span>
+                    <h3>Gaming &amp; Digital Communities</h3>
+                    <p>Understanding player behaviour, toxicity, community health, online interaction and the behavioural conditions that support healthier digital communities.</p>
+                </div>
+                <div class="expertise-item">
+                    <span class="expertise-number">06</span>
+                    <h3>Wellbeing &amp; Human Performance</h3>
+                    <p>Applying behavioural science to stress, emotional regulation, resilience, communication, decision-making and performance under pressure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traction section temporarily disabled — credibility/organizations section to be redesigned separately later.
+    <section class="traction-section" id="traction">
+        <div class="container">
+            <div class="traction-group">
+                <span class="traction-label">Presented At</span>
+                <div class="traction-list">Nordic Game &middot; Serious Play Conference &middot; University of Rochester &middot; XP Game Summit &middot; CYPSY29 &middot; MAGIC Spell Studios</div>
+            </div>
+            <div class="traction-group">
+                <span class="traction-label">Research Partners</span>
+                <div class="traction-list">University of Toronto &middot; University of Guelph &middot; Tampere University &middot; University of Agder &middot; Lucefona University</div>
+            </div>
+            <div class="traction-group">
+                <span class="traction-label">Partners &amp; Collaborators</span>
+                <div class="traction-list">Protexxa &middot; Cybernations &middot; The Firehood &middot; BMO &middot; Core Centre &middot; Immigrant Women in Business &middot; Canada&ndash;Poland Association of Businesswomen &middot; Mrs Canada Globe &middot; Mississauga Arts Council &middot; Waterfront Magazine &middot; Film for Peace &middot; Ryan Joseph Art &middot; Polish Teachers Association &middot; My School Rocks &middot; IdealMe Enrichment Foundation &middot; Resilient Kids Canada</div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">About</span>
+                <h2 class="section-title">Understanding People. Shaping Safer Technology.</h2>
+            </div>
+           <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <p style="color: var(--gray-300); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                    I am a behavioural scientist, psychologist, researcher and international speaker with more than two decades of academic and professional experience studying how people think, communicate, make decisions and change behaviour.
+                </p>
+                <p style="color: var(--gray-300); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                    My career has spanned academia, psychological practice, research and entrepreneurship, including roles as an assistant professor, researcher and practicing psychologist. Across more than two decades of psychological practice, research and work in education, I have supported thousands of young people and families, giving me a deep understanding of human behaviour in real-world environments.
+                </p>
+                <p style="color: var(--gray-300); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                    Today, I apply behavioural science to some of the most important challenges emerging at the intersection of people and technology — responsible AI, AI validation, online safety, cybersecurity and defence, gaming, digital communities and wellbeing. My work focuses particularly on how AI interprets human behaviour, how people respond to intelligent systems, and how behavioural evidence can help make technology safer and more trustworthy.
+                </p>
+                <p style="color: var(--gray-300); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                    I founded Felixa Health to translate this work into practical approaches for understanding behaviour and creating safer online environments. Alongside my research, I advise organizations, lead workshops and speak internationally on the human side of AI, digital safety and behaviour change.
+                    
+                </p>
+               <!-- READ MORE TOGGLE -->
+<div class="read-more-container" style="text-align: center; margin-top: 1.5rem;">
+  <button id="aboutReadMore" class="btn btn-outline" style="cursor: pointer;">Read More ▼</button>
+
+<div id="aboutMore" class="read-more-content" style="text-align: left; margin-top: 2rem; max-height:0; opacity:0; overflow:hidden;">
+    <h3 style="color: var(--primary); margin-bottom: 0.75rem;">Professional Experience</h3>
+    <ul style="color: var(--gray-300); line-height: 1.8;">
+      <li>Founder & CEO – Felixa Health Inc. (2023–Present)</li>
+      <li>Founder & Director – Core Centre Inc. (2012–Present)</li>
+      <li>Founder & Advisor – IdealMe Solutions Inc. (2025–Present)</li>
+      <li>President & Founder – IdealMe Enrichment Foundation (2018–2025)</li>
+      <li>Founder & Project Director – Talk2Alex App (2019–2021)</li>
+      <li>Psychologist – Toronto Catholic District School Board (2010–2023)</li>
+      <li>Psychologist / Psychometrist – Celinski & Associates (2005–2016)</li>
+      <li>Assistant Professor – University of Social Sciences and Humanities, Warsaw (2001–2004)</li>
+      <li>Director of Qualitative Research – European Institute of Social Marketing (1999–2005)</li>
+      <li>Quantitative & Qualitative Research Provider – EEI (1998–2003)</li>
+      <li>Director & Associate Editor – Toronto Waterfront Magazine (2018–2022)</li>
+      <li>Journalist – Polish Radio & Television (PR III), Warsaw, Poland</li>
+    </ul>
+
+    <h3 style="color: var(--primary); margin-top: 2rem;">Advisory Boards & Committee Roles</h3>
+    <ul style="color: var(--gray-300); line-height: 1.8;">
+      <li>Resilient Kids Canada – Advisory Board Member / Program Collaborator (2021–Present)</li>
+      <li>International Peace Festival – Director (2019–2022)</li>
+      <li>Toronto Waterfront Awards – Director & Planning Committee Member (2018–2022)</li>
+      <li>Learning Disabilities Association of Peel Region (LDAO Peel) – Advisory & Educational Partner (2018–2020)</li>
+      <li>Toronto Catholic District School Board (TCDSB) – Committee Member (2010–2023)</li>
+      <li>Learning Disability Intensive Support Programming Committee</li>
+      <li>Learning Disability Programming Recommendations Committee</li>
+      <li>Alternative Curriculum & Assistive Technology Committee</li>
+      <li>Empower Reading Program Committee</li>
+      <li>Learning Disability Accountability Framework Committee</li>
+      <li>Ontario Psychological Association – Poster Session Coordinator (2013–2017)</li>
+    </ul>
+
+    <h3 style="color: var(--primary); margin-top: 2rem;">Recognitions & Awards</h3>
+    <ul style="color: var(--gray-300); line-height: 1.8;">
+      <li><strong>2026</strong> — Mind, Body and Spirit Award — Brilliant Minded Women Organization. Award presentation scheduled for November 7, 2026, in Mississauga, Ontario.</li>
+      <li><strong>2025</strong> — Second Place Poster Finalist: "The Psychology and Technology Behind Safer Online Communities" — Ontario Psychological Association 78th Annual Conference.</li>
+      <li><strong>2018</strong> — Nomination for the Marr Neville Award — recognized for outstanding contributions to child and youth mental health in prevention and early intervention.</li>
+      <li><strong>2004</strong> — The State Committee for Scientific Research (KBN, Poland) — 2-year research grant for narrative cognition and prosocial behavior.</li>
+      <li><strong>2004</strong> — Award for Doctoral Thesis — recognized for excellence in social cognition research.</li>
+      <li><strong>2003</strong> — Doctoral Research Grant — narrative psychology and person perception.</li>
+      <li><strong>2001</strong> — Award for Master’s Thesis — fear and alexithymia in persuasive communication.</li>
+      <li><strong>2000</strong> — SWPS Award — empirical research on fear and perception in public communication psychology.</li>
+    </ul>
+  </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="speaking">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Speaking</span>
+                <h2 class="section-title">Big Questions About AI. Grounded in Human Behaviour.</h2>
+            </div>
+
+            <div class="speaking-intro">
+                <p>
+                    Dr. Ewa Antczak brings more than two decades of behavioural science, psychology and research to some of today's most urgent questions about AI, trust and digital safety. Her talks make complex ideas understandable, provocative and practical — helping audiences think differently about how technology affects people and how we can make it safer.
+                </p>
+            </div>
+
+            <!-- Signature Keynotes -->
+            <h3 style="text-align: center; color: var(--primary); font-size: 1.8rem; margin: 3rem 0 0;">
+                Signature Keynotes
+            </h3>
+
+            <div class="keynote-featured">
+                <span class="keynote-number">01</span>
+                <h3>Can We Trust AI to Understand Human Behaviour?</h3>
+                <p>AI increasingly interprets emotions, intentions and behaviour. But how do we know when its judgments are right? A thought-provoking exploration of what AI understands about people — and what it still gets wrong.</p>
+            </div>
+
+            <div class="keynote-grid">
+                <div class="keynote-item">
+                    <span class="keynote-number">02</span>
+                    <h3>Beyond Accuracy: Why AI Needs a Behavioural Reality Check</h3>
+                    <p>AI can perform well on technical benchmarks and still fail in the complexity of real human situations. This keynote explores why human-grounded validation may be one of the missing layers in responsible AI.</p>
+                </div>
+                <div class="keynote-item">
+                    <span class="keynote-number">03</span>
+                    <h3>From Moderation to Prevention: Creating Safer Digital Spaces</h3>
+                    <p>What if we could identify behavioural escalation before an online interaction becomes harmful? Dr. Ewa explores how behavioural science and AI can help move digital safety from reacting to harm toward preventing it.</p>
+                </div>
+                <div class="keynote-item">
+                    <span class="keynote-number">04</span>
+                    <h3>The Human Factor in Cybersecurity &amp; Defence</h3>
+                    <p>Technology may detect threats, but people still interpret information, communicate, make decisions and act under pressure. This talk examines behavioural risk, resilience, human&ndash;AI interaction and decision-making in high-stakes environments.</p>
+                </div>
+                <div class="keynote-item">
+                    <span class="keynote-number">05</span>
+                    <h3>The Psychology of Trust in the Age of AI</h3>
+                    <p>Why do people trust some technologies and reject others? Drawing on behavioural science, this keynote explores trust, uncertainty, human oversight and what organizations need to understand as AI becomes part of everyday decisions.</p>
+                </div>
+            </div>
+
+            <!-- See Dr. Ewa Speak -->
+            <h3 style="text-align: center; color: var(--primary); font-size: 1.8rem; margin: 3.5rem 0 1.5rem;">
+                See Dr. Ewa Speak
+            </h3>
+
+            <div class="featured-video-wrap">
+                <div class="featured-video-portrait">
+                    <div class="video-embed-wrap-portrait" id="videoWrap-featured-AltKAXwwE" onclick="playEmbeddedVideo('Al-tKAXw-wE', 'videoWrap-featured-AltKAXwwE')">
+                        <img src="stop-toxicity-thumbnail.png" alt="Psychology and Technology Behind Safer Online Spaces — Nordic Game 2026">
+                        <div class="video-play-btn"></div>
+                    </div>
+                    <div class="video-card-body">
+                        <span class="video-card-tag">Nordic Game 2026 · AI Track</span>
+                        <div class="video-card-title">Psychology and Technology Behind Safer Online Spaces</div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="mailto:ewa@felixagaming.com" class="btn btn-primary">BOOK DR. EWA</a>
+                </div>
+            </div>
+
+            <!-- Talks and Interviews (small subsection) -->
+            <div style="margin-top: 3rem;">
+                <h3 style="text-align: center; color: var(--primary); font-size: 1.1rem; margin-bottom: 1.5rem;">Talks and Interviews</h3>
+
+                <div class="speaking-gallery">
+
+                  <div class="gallery-item">
+                    <a href="https://youtu.be/3N54d9inBXk" target="_blank" rel="noopener">
+                      <img src="IMG_6394.jpeg" alt="Speaking photo 1" loading="lazy" decoding="async">
+                    </a>
+                  </div>
+
+                  <div class="gallery-item">
+                    <a href="https://youtu.be/3N54d9inBXk" target="_blank" rel="noopener">
+                      <img src="speaking-photo-2.jpg" alt="Speaking photo 2" loading="lazy" decoding="async">
+                    </a>
+                  </div>
+
+                  <div class="gallery-item">
+                    <a href="https://youtu.be/3N54d9inBXk" target="_blank" rel="noopener">
+                      <img src="IMG_6474.jpeg" alt="Speaking photo 3" loading="lazy" decoding="async">
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="video-grid" style="margin-top: 2rem;">
+
+                    <div class="video-card">
+                        <div class="video-embed-wrap" id="videoWrap-gixmR0gOpQ4" onclick="playEmbeddedVideo('gixmR0gOpQ4')">
+                            <img src="https://img.youtube.com/vi/gixmR0gOpQ4/hqdefault.jpg" alt="Building Trust in a Triggered World: Science Behind Safer Online Platforms" loading="lazy">
+                            <div class="video-play-btn"></div>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-card-tag">Podcast Appearance · Livestream</span>
+                            <div class="video-card-title">Building Trust in a Triggered World: Science Behind Safer Online Platforms</div>
+                            <a class="video-card-link" href="https://www.youtube.com/live/gixmR0gOpQ4" target="_blank">Watch on YouTube ↗</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-embed-wrap" id="videoWrap-ulOEG5nIr10" onclick="playEmbeddedVideo('ulOEG5nIr10')">
+                            <img src="https://img.youtube.com/vi/ulOEG5nIr10/hqdefault.jpg" alt="Stop Toxicity in Online Games | Gaming Psychology | NG26" loading="lazy">
+                            <div class="video-play-btn"></div>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-card-tag">Nordic Game · June 2026</span>
+                            <div class="video-card-title">Stop Toxicity in Online Games | Gaming Psychology | NG26</div>
+                            <a class="video-card-link" href="https://youtu.be/ulOEG5nIr10" target="_blank">Watch on YouTube ↗</a>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-embed-wrap" id="videoWrap-1sbBLOMuNfQ" onclick="playEmbeddedVideo('1sbBLOMuNfQ')">
+                            <img src="https://img.youtube.com/vi/1sbBLOMuNfQ/hqdefault.jpg" alt="Academic Esports Seminar interviews - Ewa Antczak" loading="lazy">
+                            <div class="video-play-btn"></div>
+                        </div>
+                        <div class="video-card-body">
+                            <span class="video-card-tag">Interview · UiA Esport · May 2025</span>
+                            <div class="video-card-title">Academic Esports Seminar Interviews – Ewa Antczak</div>
+                            <a class="video-card-link" href="https://youtu.be/1sbBLOMuNfQ" target="_blank">Watch on YouTube ↗</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Speaking Engagements -->
+            <h3 style="text-align: center; color: var(--primary); font-size: 1.8rem; margin: 4rem 0 1.5rem;">
+                Selected Speaking Engagements
+            </h3>
+            
+            <div class="table-container">
+                <table class="speaking-table">
+                    <tbody>
+                        <tr>
+                            <td data-label="Date">May 26, 2026</td>
+                            <td data-label="Location">Malmö, Sweden</td>
+                            <td data-label="Title"><a href="https://nordicgame.com/speaker/ewa-antczak/" target="_blank">Nordic Game 2026, AI Track</a><br><em>"Psychology and Technology Behind Safer Online Spaces"</em></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Date">Aug 16, 2025</td>
+                            <td data-label="Location">Rochester, New York, USA</td>
+                            <td data-label="Title"><a href="https://seriousplayconf.com" target="_blank">Serious Play Esports Summit</a>, RIT MAGIC Spell Studios<br><em>"Using AI and Positive Psychology to Transform Harmful Behaviours in Online Gaming Communities"</em></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Date">Jun 13, 2025</td>
+                            <td data-label="Location">Toronto, Canada</td>
+                            <td data-label="Title"><a href="https://xpgamesummit.com" target="_blank">XP Game Summit 2025</a><br><em>"Creating Safer Online Spaces for Youth"</em></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Date">May 21–23, 2025</td>
+                            <td data-label="Location">Grimstad, Norway</td>
+                            <td data-label="Title"><a href="https://www.uia.no/en" target="_blank">The Academic Esports Seminar at UiA Grimstad</a>, University of Agder</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Date">Aug 7, 2026</td>
+                            <td data-label="Location">Toronto, Ontario, Canada</td>
+                            <td data-label="Title"><em>Leading Under Pressure</em><br>Nexelle Program, The Firehood. Workshop on how thoughts, emotions, mindset, and behavioural responses influence performance under pressure. Cofacilitated by Dr. Ewa Antczak and Mikolaj Antczak.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Date">Aug 29, 2026 <span style="color: var(--navy); font-weight: 700; text-transform: uppercase; font-size: 0.8em;">(Upcoming)</span></td>
+                            <td data-label="Location">Oakville, Ontario, Canada</td>
+                            <td data-label="Title"><em>Parenting Under Pressure</em><br>Half-day experiential workshop combining behavioral science, emotional regulation, mindfulness, creative activities, nature, and practical parenting strategies. Facilitators: Dr. Ewa Antczak and Ryan Joseph.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Apr 6, 2026</td>
+                            <td data-label="Location">Mississauga, Ontario, Canada</td>
+                            <td data-label="Title"><em>Empower The Whole You</em><br>Canada Poland Association of Businesswomen. Dr. Ewa Antczak participated as an expert speaker.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Aug 15, 2025</td>
+                            <td data-label="Location">Rochester, USA</td>
+                            <td data-label="Title"><a href="https://seriousplayconf.com" target="_blank">Serious Play Conference at the University of Rochester</a><br><em>"The Psychology and Technology Behind Safer Gaming"</em></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Feb 14, 2020</td>
+                            <td data-label="Location">Toronto, Canada</td>
+                            <td data-label="Title">TCDSB Leaders of Your Own Learning (LOYOL)<br><em>"Mental Health in the Classroom"</em></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">May 22, 2019</td>
+                            <td data-label="Location">Toronto, Canada</td>
+                            <td data-label="Title"><a href="https://collisionconf.com" target="_blank">Empowering Women and Wellness in the Workplace – Collision Conference</a></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Mar 26, 2019</td>
+                            <td data-label="Location">Mississauga, Canada</td>
+                            <td data-label="Title"><em>All You Need to Know About Psycho-Educational Assessments</em><br>Learning Disabilities Peel Region (LDPR)</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Aug 20, 2019</td>
+                            <td data-label="Location">Mississauga, Canada</td>
+                            <td data-label="Title"><a href="https://www.ldatschool.ca" target="_blank"><em>Ways to Motivate and Engage Students with a Learning Disability</em><br>LD@school's 6th Annual Educators' Institute</a></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Aug 22, 2018</td>
+                            <td data-label="Location">Toronto, Canada</td>
+                            <td data-label="Title"><a href="https://www.ldatschool.ca" target="_blank"><em>IDEAL ME: Confident, Assertive, In Charge – Developing the Attitudes of Leadership</em><br>LD@school's 5th Annual Educators' Institute</a></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Jun 21, 2018</td>
+                            <td data-label="Location">Dnipropetrovsk, Ukraine (videoconference)</td>
+                            <td data-label="Title"><em>Management and Leadership in the Multicultural Society</em><br>Guest Speaker, National Mining University</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Nov 10, 2016</td>
+                            <td data-label="Location">Mississauga, Canada</td>
+                            <td data-label="Title"><em>Preserving Our Working Memory</em><br>Rotary Club Presentation</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Nov 3, 2016</td>
+                            <td data-label="Location">Mississauga, Canada</td>
+                            <td data-label="Title"><em>Working Memory</em><br>Rotary Club Presentation</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Jan 2015</td>
+                            <td data-label="Location">Montreal, Canada</td>
+                            <td data-label="Title"><em>Enhancing Child's Interest in Learning</em><br>Polish Teachers Federation</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Sep 2014</td>
+                            <td data-label="Location">Burlington, Canada</td>
+                            <td data-label="Title"><em>Enhancing Child's Interest in Learning</em><br>Polish Teachers Federation</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Jun 2014</td>
+                            <td data-label="Location">Mississauga, Canada</td>
+                            <td data-label="Title"><em>Changing Negative Attitudes in Children and Youths</em></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Oct 2006</td>
+                            <td data-label="Location">San Diego, USA</td>
+                            <td data-label="Title"><a href="https://nanonline.org" target="_blank"><em>Social Intelligence Test-R as a Neuropsychological Instrument</em><br>Poster, National Academy of Neuropsychology Conference</a></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Jun 2005</td>
+                            <td data-label="Location">Würzburg, Germany</td>
+                            <td data-label="Title"><em>Why Stories Make Us More Helpful</em><br>14th General Meeting</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Jun 2004</td>
+                            <td data-label="Location">Mądralin, Poland</td>
+                            <td data-label="Title"><em>Personal History and Stereotype as Two Contexts of Person Cognition</em><br>Conference on Psychological Context in Intergroup Relations (Dr. M. Kofta)</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Sep 2003</td>
+                            <td data-label="Location">Padova, Italy</td>
+                            <td data-label="Title"><a href="https://www.escon-society.eu" target="_blank"><em>Narrative Mode Influence on Person Impression</em><br>ESCON Conference</a></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Sep 2003</td>
+                            <td data-label="Location">St. Kathrin, Poland</td>
+                            <td data-label="Title"><em>Narrative Mode Influence on Person Impression</em><br>III Polish Conference of Narrative Psychology (Dr. P. Oleś)</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Feb 2003</td>
+                            <td data-label="Location">Warsaw, Poland</td>
+                            <td data-label="Title"><em>Workshops on Social Advertising</em></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Jun 2001</td>
+                            <td data-label="Location">Warsaw, Poland</td>
+                            <td data-label="Title"><em>The Effectiveness of Fear Appeal Public Service Announcements</em><br>Warsaw Workshop on Social Psychology</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">May 2001</td>
+                            <td data-label="Location">Kraków, Poland</td>
+                            <td data-label="Title"><em>The Effectiveness of Fear Appeal Public Service Announcements</em><br>Crackfilm Festival</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Jan 2001</td>
+                            <td data-label="Location">Wrocław, Poland</td>
+                            <td data-label="Title"><em>Changing Attitudes: "New Millennium – I Do Not Smoke Because I Like It." Social Marketing as a Weapon Against Smoking</em></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">Jun 2000</td>
+                            <td data-label="Location">Wrocław, Poland</td>
+                            <td data-label="Title"><em>Social Advertising in Poland</em><br>International Conference: The Role of Media in the Process of Communication</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">2000</td>
+                            <td data-label="Location">Warsaw, Poland</td>
+                            <td data-label="Title"><em>Role of Persuasive Psychology in Commercial Advertising</em><br>(Supervisor: Dr. A. Grochowska)</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">1999</td>
+                            <td data-label="Location">Warsaw, Poland</td>
+                            <td data-label="Title"><em>Narcissistic Disorders of Personality</em><br>(Supervisor: Dr. E. Trzebińska)</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">1998</td>
+                            <td data-label="Location">Warsaw, Poland</td>
+                            <td data-label="Title"><em>A Not-B Effect</em><br>(Supervisor: Dr. K. Konarzewski)</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Date">1998</td>
+                            <td data-label="Location">Warsaw, Poland</td>
+                            <td data-label="Title"><em>Sport Fans and Violent Behaviours</em><br>(Supervisor: Dr. A. Frączek)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="show-more-btn" id="showMoreBtn" onclick="toggleSpeakingRows()">
+                View Full Speaking History ▼
+            </button>
+
+            <!-- Call to Action -->
+            <div class="cta-box" style="margin-top: 3rem;">
+                <h3>Ready to Book Dr. Ewa for Your Event?</h3>
+                <p>
+                    Keynotes • Workshops • Panels • Corporate Training • Virtual Presentations
+                </p>
+                <a href="#contact" class="btn btn-primary">
+                    Get in Touch
+                </a>
+                <a href="mailto:ewa@felixagaming.com" class="btn btn-outline">
+                    Email Directly
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="research" style="background: var(--soft-white);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Research Collaboration</span>
+                <h2 class="section-title">Advancing <span class="gradient-text">Science</span> & Innovation</h2>
+            </div>
+
+            <div class="speaking-intro">
+                <p>
+                    25+ years of pioneering research at the intersection of behavioral science, psychology, and technology. 
+                    From narrative psychology to AI-driven behavioral transformation, each project contributes to creating 
+                    safer, more empathetic digital communities.
+                </p>
+            </div>
+
+            <h3 style="text-align: center; color: var(--primary); font-size: 1.8rem; margin: 3rem 0 1.5rem;">
+                Research Projects
+            </h3>
+            
+            <div class="table-container">
+                <table class="research-table">
+                    <tbody>
+                        <tr>
+                            <td data-label="Year">2026</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">The Psychology and Technology Behind Safer Online Communities</div>
+                                <div class="project-note">(5th Annual Let's Talk About Youth: A Clinical Developmental Psychology Conference, York University, Toronto, Canada — April 27, 2026)</div>
+                            </td>
+                            <td data-label="Description">Research developed with students from the University of Toronto and the University of Guelph. Presented on behalf of the research team by Mikolaj Antczak and Bella Stasiuk.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Year">2026</td>
+                            <td data-label="Project Title">
+                                <div class="project-title"><a href="https://www.felixagaming.com/s/Human-AI-Agreement-iCYPSY.pptx" target="_blank">Human AI Agreement in Online Emotional Tone Assessment: A Preliminary Calibration Study</a></div>
+                                <div class="project-note">(Research Poster – 29th Annual CyberPsychology, CyberTherapy and Social Networking Conference, CYPSY29, Porto, Portugal)</div>
+                            </td>
+                            <td data-label="Description">Examined agreement between artificial intelligence and trained human judgments when evaluating emotional tone in online communication. Authors: Ewa Antczak, Joseph Macey, Mikolaj Antczak, and Yaqi Huang. Poster presented by Dr. Ewa Antczak.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Year">Under Peer Review</td>
+                            <td data-label="Project Title">
+                                <div class="project-title"><a href="https://www.felixagaming.com/s/CyPsy_29_paper_145-1.pdf" target="_blank">Proactive Moderation of Toxicity in Online Gaming</a></div>
+                            </td>
+                            <td data-label="Description">Collaborative research with Dr. Ewa Antczak, Joseph Macey, Anna Leena Macey, and Juho Hamari examining proactive approaches to online toxicity and opportunities for behavioural intervention before harmful interactions escalate.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Year">2025</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">AI–Human Alignment in Evaluating Online Behavior</div>
+                                <div class="project-note">(Second Place Poster Finalist – Ontario Psychological Association 78th Annual Conference, 2025)</div>
+                            </td>
+                            <td data-label="Description">Empirical validation comparing AI-generated and human ratings of emotional and behavioral attributes across multiple platforms.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Year">2025</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">Transforming Digital Human Interaction: The Felixa Psychological Foundations</div>
+                            </td>
+                            <td data-label="Description">Conceptual manifesto defining the psychological, philosophical, and behavioral framework behind Felixa; bridges psychology, ethics, and AI.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Year">2025</td>
+                            <td data-label="Project Title">
+                                <div class="project-title"><a href="https://osf.io/preprints/psyarxiv/utypx_v1?utm_source=chatgpt.com" target="_blank">The Psychology and Technology Behind Safer Gaming Communities</a></div>
+                            </td>
+                            <td data-label="Description">Published study integrating psychology and AI for safer gaming environments; presented at Serious Play & XP Game Summit.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Year">2024</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">Behavioral and Semantic Markers as Predictive Tools</div>
+                            </td>
+                            <td data-label="Description">Development of AI-driven linguistic and behavioral indicators that predict and transform toxic interaction patterns in gaming and streaming ecosystems.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Year">2023</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">Internet and Digital Media Usage and Its Impact on Mental Well-Being</div>
+                            </td>
+                            <td data-label="Description">Examined behavioral, emotional, and motivational effects of prolonged digital exposure; foundation for Felixa's digital-behavior framework.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Year">2021 – Present</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">Felixa Health – AI for Safer Digital Communities</div>
+                            </td>
+                            <td data-label="Description">Behavioral analytics platform merging psychology and AI to detect, interpret, and transform toxic online behaviors.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Year">2018 – 2021</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">Talk2Alex</div>
+                            </td>
+                            <td data-label="Description">AI-supported emotional-coaching and self-regulation app; precursor to Felixa's behavioral feedback loop.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Year">2010 – 2020</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">IdealMe Program</div>
+                            </td>
+                            <td data-label="Description">Psychoeducational framework integrating emotional regulation, motivation, and cognitive restructuring for children and youth.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Year">2004 – 2006</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">Social Intelligence: Test-R as a Neuropsychological Instrument</div>
+                                <div class="project-note">(Celinski & Associates)</div>
+                            </td>
+                            <td data-label="Description">Validated instrument assessing social cognition, emotional insight, and interpersonal problem-solving.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Year">2004 – 2006</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">Stress Lessons – Psychology Foundation of Canada</div>
+                            </td>
+                            <td data-label="Description">Supported creation and evaluation of a curriculum teaching emotional regulation and coping strategies to educators and students.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Year">2001 – 2005</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">Narrative Mode Influences Mindset in Understanding Others</div>
+                                <div class="project-note">(SWPS University)</div>
+                            </td>
+                            <td data-label="Description">Demonstrated that narrative-based processing enhances empathy and reduces stereotyping in person perception.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Year">2001 – 2005</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">Narrative Mode in Person Cognition</div>
+                                <div class="project-note">(SWPS University)</div>
+                            </td>
+                            <td data-label="Description">Explored how narrative framing shapes perception of others' intentions and moral judgments.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Year">2001 – 2005</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">Narrations in Schizophrenia</div>
+                                <div class="project-note">(SWPS University)</div>
+                            </td>
+                            <td data-label="Description">Analyzed differences in narrative coherence between psychotic and non-psychotic thought processes.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Year">2001 – 2002</td>
+                            <td data-label="Project Title">
+                                <div class="project-title">Influencing Conscious and Unconscious Attitudes and Physiological Arousal Toward Smoking Through Public Service Announcements</div>
+                                <div class="project-note">(Maison & Antczak, University of Warsaw)</div>
+                            </td>
+                            <td data-label="Description">Measured heart rate, skin conductance, and attitude change in response to emotional PSA campaigns—early research in persuasive health communication.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="show-more-btn" id="showMoreResearchBtn" onclick="toggleResearchRows()">
+                Show More ▼
+            </button>
+
+            <!-- Call to Action -->
+            <div class="cta-box" style="margin-top: 3rem;">
+                <h3>Interested in Research Collaboration?</h3>
+                <p>
+                    Let's explore opportunities to advance behavioral science, AI ethics, and digital well-being together.
+                </p>
+                <a href="#contact" class="btn btn-primary">
+                    Get in Touch
+                </a>
+                <a href="mailto:ewa@felixagaming.com" class="btn btn-outline">
+                    Email Directly
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="publications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Publications</span>
+                <h2 class="section-title">Scholarly <span class="gradient-text">Contributions</span></h2>
+            </div>
+
+            <div class="speaking-intro">
+                <p>
+                    Peer-reviewed publications, books, and scholarly contributions spanning narrative psychology, 
+                    social advertising, behavioral science, and AI-driven digital safety solutions.
+                </p>
+            </div>
+
+            <h3 style="text-align: center; color: var(--primary); font-size: 1.8rem; margin: 3rem 0 1.5rem;">
+                Published Works
+            </h3>
+            
+            <div class="table-container">
+                <table class="publications-table">
+                    <tbody>
+                        <tr>
+                            <td data-label="Citation">Antczak, E. J., Antczak, M., & Huang, Y. (2026). <em>Online toxicity as a behavioral system: A framework for detection and behavior change in digital environments.</em> SSRN preprint. <a href="https://www.felixagaming.com/s/Online-Toxicity-as-a-Behavioral-System.pdf" target="_blank">Read paper</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Citation">Antczak, E. J. <em>From Moderation to Behavior Change.</em> Under peer review. <a href="https://www.felixagaming.com/s/From-Moderation-to-Behaviour-Change.pdf" target="_blank">Read paper</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Citation">Antczak, E. J., Macey, J., Antczak, M., & Huang, Y. (2026). <em>Human AI agreement in online emotional tone assessment: A preliminary calibration study.</em> Accepted full paper for editorial processing and publication in the <em>Annual Review of Cybertherapy and Telemedicine.</em> <a href="https://www.felixagaming.com/s/HumanAI-Agreement-in-Online-Emotional-Tone-Assessment-CYPSY29docx.pdf" target="_blank">Read paper</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Citation">Antczak, E. J. (2025). <em>Transforming digital human interaction: The Felixa psychological foundations.</em> Conceptual manuscript in progress.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Citation">Antczak, E. J. (2025). <em>Human–AI alignment in digital ethics: Toward proactive behavioral intervention systems.</em> Manuscript submitted for publication.</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Citation">Antczak, E. J. (2025). <em>The psychology and technology behind safer gaming communities: How Felixa shapes safe online interactions</em> [PsyArXiv preprint]. <em>PsyArXiv.</em> <a href="https://osf.io/preprints/psyarxiv/utypx_v1" target="_blank">https://osf.io/preprints/psyarxiv/utypx_v1</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Citation">Antczak, E. J. (2018). <em>Happiness of other people does not make us happy.</em> <em>Toronto Waterfront Magazine.</em></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Citation">Antczak, E. J. (2016–2018). <em>Bi-weekly columns.</em> <em>GazetaGazeta</em> (print & online).</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Citation">Antczak, E. J. (2008). <em>Propaganda dobrych serc – vademecum o reklamie społecznej</em> [<em>Propaganda of Good Hearts – Handbook on Social Advertising</em>]. Kraków, Poland: Agencja Wasilewski.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Citation">Trzebiński, J., & Antczak, E. J. (2007). <em>Narrative mode in impression formation.</em> <em>Psychology of Language and Communication, 11</em>(2), 65–83. <a href="https://www.researchgate.net/publication/237699669_Narrative_mode_in_impression_formation" target="_blank">https://www.researchgate.net/publication/237699669</a></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Citation">Trzebiński, J., & Antczak, E. J. (2006). <em>A story and a stereotype: Two frames for person perception.</em> <em>Psychologia Społeczna, 1</em>(2), 121–131. <a href="https://cejsh.icm.edu.pl/cejsh/element/bwmeta1.element.desklight-c5e36407-df59-454b-9ad1-c93cfb5ff9f0" target="_blank">View publication</a></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Citation">Celiński, M. J., Salmon, J. D., Allen, L. M., Palucka, A., & Antczak, E. J. (2006). <em>Social Intelligence Test-R as a neuropsychological instrument</em> [Conference abstract]. <em>Archives of Clinical Neuropsychology, 21</em>(6), 544. <a href="https://academic.oup.com/acn/article/21/6/544/3185" target="_blank">https://academic.oup.com/acn/article/21/6/544/3185</a></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Citation">Antczak, E. J. (2004). <em>Narrative mode influences mindset in understanding others</em> (Doctoral dissertation). University of Social Sciences and Humanities (SWPS University), Warsaw, Poland.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Citation">Trzebiński, J., & Antczak, E. J. (2003). <em>Personal history and stereotype as two contexts of person cognition.</em> In E. Zdankiewicz-Ścigała & T. Maruszewski (Eds.), <em>Around psychomanipulation</em> (pp. 201–218). Warsaw, Poland: Academica.</td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Citation">Antczak, E. J. (2002). <em>Seven chapters.</em> In D. Maison & P. Wasilewski (Eds.), <em>Propaganda dobrych serc, czyli rzecz o reklamie społecznej</em> (pp. 145–190). Kraków, Poland: Agencja Wasilewski. <a href="https://www.maisonlab.pl" target="_blank">https://www.maisonlab.pl</a></td>
+                        </tr>
+                        <tr class="hidden-row">
+                            <td data-label="Citation">Antczak, E. J. (2001). <em>Fear and alexithymia influence public service announcement perception</em> (Master's thesis). University of Social Sciences and Humanities (SWPS University), Warsaw, Poland.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="show-more-btn" id="showMorePublicationsBtn" onclick="togglePublicationsRows()">
+                Show More ▼
+            </button>
+
+            <!-- Call to Action -->
+            <div class="cta-box" style="margin-top: 3rem;">
+                <h3>Explore My Research & Publications</h3>
+                <p>
+                    Interested in collaborating or learning more about my work in behavioral science and digital ethics?
+                </p>
+                <a href="#contact" class="btn btn-primary">
+                    Get in Touch
+                </a>
+                <a href="mailto:ewa@felixagaming.com" class="btn btn-outline">
+                    Email Directly
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="media" style="background: var(--soft-white);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Media</span>
+                <h2 class="section-title">Media, <span class="gradient-text">Articles</span> &amp; Interviews</h2>
+            </div>
+
+            <div class="speaking-intro">
+                <p>
+                    Dr. Ewa Antczak has contributed to public conversations about psychology, behavioural science, mental health,
+                    children and families, digital behaviour, artificial intelligence, gaming, online safety, and human wellbeing
+                    through articles, columns, podcasts, interviews, webinars, expert commentary, and public education.
+                </p>
+            </div>
+
+            <!-- CATEGORY 1: Featured Articles & Thought Leadership -->
+            <div class="media-category">
+                <h3 class="media-category-title media-category-toggle" onclick="toggleMediaCategory('featuredArticlesBody', this)">Featured Articles &amp; Thought Leadership <span class="media-toggle-icon">▼</span></h3>
+                <div class="media-archive-content" id="featuredArticlesBody">
+                <p class="media-category-sub">Writing for Felixa on behavioural intelligence, AI, and online safety.</p>
+
+                <div class="media-list">
+                    <div class="media-item">
+                        <span class="media-item-tag">Article</span>
+                        <div class="media-item-title"><a href="https://www.felixagaming.com/blog/why-anonymity-changeshow-we-speak" target="_blank">Why Anonymity Changes How We Speak.</a></div>
+                        <div class="media-item-meta">Felixa — August 6, 2026</div>
+                        <p class="media-item-desc">Examines why people speak more harshly in voice chat, tying the effect to reduced accountability and the online disinhibition effect.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Article</span>
+                        <div class="media-item-title"><a href="https://www.felixagaming.com/blog/wnen-emotions-can-rule-the-tone" target="_blank">Wnen emotions can rule the tone.</a></div>
+                        <div class="media-item-meta">Felixa — August 6, 2026</div>
+                        <p class="media-item-desc">Looks at how emotional escalation shapes tone in online interactions before a conversation turns hostile.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Article</span>
+                        <div class="media-item-title"><a href="https://www.felixagaming.com/blog/how-to-make-ai-think-like-a-behavioural-scientist" target="_blank">How to Make AI Think Like a Behavioural Scientist</a></div>
+                        <div class="media-item-meta">Felixa — June 27, 2026</div>
+                        <p class="media-item-desc">Examines how AI can move beyond interpreting isolated words toward understanding behavioural patterns across repeated interactions.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Article</span>
+                        <div class="media-item-title"><a href="https://www.felixagaming.com/blog/felixa-uses-evolutionary-biology-to-prevent-digital-conflict" target="_blank">How Felixa Uses Evolutionary Biology To Prevent Digital Conflict</a></div>
+                        <div class="media-item-meta">Felixa — June 7, 2026</div>
+                        <p class="media-item-desc">Connects evolutionary biology and behavioural science to conflict, cooperation, and threat responses in digital spaces.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Article</span>
+                        <div class="media-item-title"><a href="https://www.felixagaming.com/blog/ai-understands-humanity-less-than-we-think" target="_blank">AI Understands Humanity Less Than We Think</a></div>
+                        <div class="media-item-meta">Felixa — May 8, 2026</div>
+                        <p class="media-item-desc">Examines limitations in AI's grasp of complex human emotion and behaviour, and the case for human-grounded evaluation.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Article</span>
+                        <div class="media-item-title"><a href="https://www.felixagaming.com/blog/can-you-predict-harmful-behaviour-in-real-time-ai-can" target="_blank">Can you predict harmful behaviour in real time? AI can.</a></div>
+                        <div class="media-item-meta">Felixa — May 16, 2026</div>
+                        <p class="media-item-desc">Examines early behavioural indicators and how proactive AI intervention can catch harm before it escalates.</p>
+                    </div>
+                </div>
+
+                <div id="articlesArchive">
+                    <div class="media-list">
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/speaking-at-nordic-game-2026" target="_blank">Speaking at Nordic Game 2026</a></div>
+                            <div class="media-item-meta">Felixa — June 25, 2026</div>
+                            <p class="media-item-desc">Recaps Dr. Antczak's AI Track session at Nordic Game 2026 in Malmö.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/the-myth-of-the-bad-person-and-how-nice-people-can-cause-harm" target="_blank">The Myth of the Bad Person and How Nice People Can Cause Harm</a></div>
+                            <div class="media-item-meta">Felixa — June 23, 2026</div>
+                            <p class="media-item-desc">Examines how harmful patterns can occur even when the person creating them appears polite or socially positive.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/can-felixa-read-minds" target="_blank">Can Felixa Read Minds?</a></div>
+                            <div class="media-item-meta">Felixa — June 14, 2026</div>
+                            <p class="media-item-desc">Addresses a common misconception about behavioural AI and clarifies what pattern-based detection actually does.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/are-we-raising-a-generation-that-learns-how-to-love-from-something-that-cant-love" target="_blank">Are we raising a generation that learns how to love from something that can't love?</a></div>
+                            <div class="media-item-meta">Felixa — May 18, 2026</div>
+                            <p class="media-item-desc">Explores AI, relationships, children, attachment, and emotional development as young people form bonds with artificial systems.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/how-ai-can-reduce-toxicity-in-real-time" target="_blank">How AI Can Reduce Toxicity in Real Time</a></div>
+                            <div class="media-item-meta">Felixa — December 7, 2025</div>
+                            <p class="media-item-desc">Explores behavioural detection and real-time intervention as an alternative to purely reactive moderation.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/what-your-child-wont-tell-you-about-online-bullying-and-how-you-can-help" target="_blank">What Your Child Won't Tell You About Online Bullying and How You Can Help</a></div>
+                            <div class="media-item-meta">Felixa — September 1, 2025</div>
+                            <p class="media-item-desc">Addresses online bullying, behavioural warning signs, and how parents can open the conversation with kids.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/esports-j22rt" target="_blank">REVOLUTIONIZING PLAY: Top 4 Ways AI is Used in the Gaming Industry</a></div>
+                            <div class="media-item-meta">Felixa — July 11, 2025</div>
+                            <p class="media-item-desc">Surveys major applications of artificial intelligence within the gaming industry.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/video-games-esports-rise-in-popularity-a5b2y" target="_blank">THE TOP-EARNING GAMES FOR CHILDREN: Where Fun and Profit Meet</a></div>
+                            <div class="media-item-meta">Felixa — July 4, 2025</div>
+                            <p class="media-item-desc">Examines popular games for children, gaming culture, engagement, and monetization.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/e-sports-conference-to-take-place-in-sweden-this-year-tx2a4" target="_blank">THE POWER OF PLAY: Top 3 Benefits of Gaming for Children and Adults</a></div>
+                            <div class="media-item-meta">Felixa — June 29, 2025</div>
+                            <p class="media-item-desc">Examines psychological, social, and cognitive benefits associated with gaming.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/the-psychology-and-technology-behind-safer-gaming-communities" target="_blank">The Psychology and Technology Behind Safer Gaming Communities</a></div>
+                            <div class="media-item-meta">Felixa — June 20, 2025</div>
+                            <p class="media-item-desc">The public Felixa article presenting this research for a general audience. The peer-reviewed preprint is listed separately under Publications.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/why-games-are-awesome-and-sometimes-really-not" target="_blank">Why Games Are Awesome (and Sometimes... Really Not)</a></div>
+                            <div class="media-item-meta">Felixa — June 14, 2025</div>
+                            <p class="media-item-desc">Explores both the benefits and behavioural risks associated with gaming.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/is-your-game-losing-players-because-of-toxicity" target="_blank">Is Your Game Losing Players Because of Toxicity?</a></div>
+                            <div class="media-item-meta">Felixa — June 11, 2025</div>
+                            <p class="media-item-desc">Examines the relationship between toxicity, player experience, and community health.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/is-my-child-safe-online" target="_blank">"Is My Child Safe Online?" Here's What Every Parent Should Know About Gaming Communities</a></div>
+                            <div class="media-item-meta">Felixa — June 8, 2025</div>
+                            <p class="media-item-desc">Discusses gaming communities, online safety, and behavioural risks for parents.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Article</span>
+                            <div class="media-item-title"><a href="https://www.felixagaming.com/blog/why-every-online-community-needs-a-felixa-reportnow-more-than-ever" target="_blank">Why Every Online Community Needs a Felixa Report—Now More Than Ever</a></div>
+                            <div class="media-item-meta">Felixa — June 4, 2025</div>
+                            <p class="media-item-desc">Explains the role of behavioural analytics and community health assessment in understanding online environments.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 2: Magazine & Newspaper Writing -->
+            <div class="media-category">
+                <h3 class="media-category-title media-category-toggle" onclick="toggleMediaCategory('magazineBody', this)">Magazine &amp; Newspaper Writing <span class="media-toggle-icon">▼</span></h3>
+                <div class="media-archive-content" id="magazineBody">
+                <div class="media-list">
+                    <div class="media-item">
+                        <span class="media-item-tag">Column Series</span>
+                        <div class="media-item-title">Psychology and Wellbeing Columns</div>
+                        <div class="media-item-meta">GazetaGazeta — print &amp; online — 2016 to 2018</div>
+                        <p class="media-item-desc">Biweekly columns addressing human behaviour, emotional wellbeing, relationships, parenting, children, families, and mental health.</p>
+                        <ul class="media-sub-list">
+                            <li><a href="http://gazetagazeta.com/2016/09/o-roli-dziadkow-w-wychowaniu-dzieci/" target="_blank">O roli dziadków w wychowaniu dzieci</a> — September 2016 (also republished by Core Centre below)</li>
+                        </ul>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Article</span>
+                        <div class="media-item-title"><a href="https://corecentre.ca/everyone-has-the-right-to-choose-wrong/" target="_blank">Everyone Has the Right to Choose Wrong</a></div>
+                        <div class="media-item-meta">Core Centre — Dr. Ewa Antczak — May 2018</div>
+                        <p class="media-item-desc">Examines decision making, learned beliefs, automatic thinking, and personal responsibility in behaviour change.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Article · Polish</span>
+                        <div class="media-item-title"><a href="https://corecentre.ca/o-roli-dziadkow-w-wychowaniu-dzieci/" target="_blank">O Roli Dziadków w Wychowaniu Dzieci</a></div>
+                        <div class="media-item-meta">Core Centre — Dr. Ewa J. Antczak — November 2016 (originally GazetaGazeta, September 2016)</div>
+                        <p class="media-item-desc">Polish-language article on the role of grandparents in children's lives and intergenerational family dynamics.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Coauthored Article</span>
+                        <div class="media-item-title"><a href="https://corecentre.ca/behind-the-wall-the-cult-of-celebrity-culture/" target="_blank">Behind The Wall | The Cult of Celebrity Culture</a></div>
+                        <div class="media-item-meta">Core Centre — Dr. Ewa J. Antczak &amp; Martin Kabat — February 2018</div>
+                        <p class="media-item-desc">Long-form piece on celebrity culture, social media, external validation, and adolescent self-esteem.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Article</span>
+                        <div class="media-item-title">Non Pharmaceutical Treatment for Problems With Behavior and Attention</div>
+                        <div class="media-item-meta">Culture Magazin — Dr. Ewa J. Antczak — September 2015</div>
+                        <p class="media-item-desc">Discusses ADHD, attention, and non-pharmaceutical approaches including neurofeedback. No archived link currently available for this print piece.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Magazine Interview</span>
+                        <div class="media-item-title"><a href="https://corecentre.ca/interview-for-owl-magazine/" target="_blank">Interview For OWL Kids Magazine</a></div>
+                        <div class="media-item-meta">OWL Kids Magazine / OWLconnected</div>
+                        <p class="media-item-desc">Expert interview with Dr. Ewa J. Antczak. Original publication date not currently available from the archived source.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Article · See Publications</span>
+                        <div class="media-item-title">Happiness of Other People Does Not Make Us Happy</div>
+                        <div class="media-item-meta">Toronto Waterfront Magazine — 2018</div>
+                        <p class="media-item-desc">Already listed as a full record in the Publications section above to avoid a duplicate entry.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 3: Podcasts, Interviews & Webinars -->
+            <div class="media-category">
+                <h3 class="media-category-title media-category-toggle" onclick="toggleMediaCategory('podcastsBody', this)">Podcasts, Interviews &amp; Webinars <span class="media-toggle-icon">▼</span></h3>
+                <div class="media-archive-content" id="podcastsBody">
+                <div class="media-list">
+                    <div class="media-item">
+                        <span class="media-item-tag">Podcast · Livestream</span>
+                        <div class="media-item-title"><a href="https://www.youtube.com/live/gixmR0gOpQ4" target="_blank">Building Trust in a Triggered World: Science Behind Safer Online Platforms</a></div>
+                        <div class="media-item-meta">Positivity Hack Delivered, Women On IT — Episode 205 — January 28, 2026</div>
+                        <p class="media-item-desc">Full video and details are under Talks and Interviews in the Speaking section above.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Podcast Appearance</span>
+                        <div class="media-item-title"><a href="https://www.youtube.com/watch?v=Yw_Zd6Flwr0" target="_blank">"Erasing the Stigma" with Dr. Ewa Antczak of Felixa Games</a></div>
+                        <div class="media-item-meta">What The Tech?, Boast AI — Episode 23 — November 30, 2023</div>
+                        <p class="media-item-desc">Discussion of gaming, mental health, and how Felixa's behavioural technology approaches digital wellbeing.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Webinar</span>
+                        <div class="media-item-title"><a href="https://corecentre.ca/td-culture-lab-daily-dose-supporting-your-mental-health-with-dr-ewa-antczak/" target="_blank">Supporting Your Mental Health</a></div>
+                        <div class="media-item-meta">TD Culture Lab, Daily Dose — Mississauga Arts Council — February 2022</div>
+                        <p class="media-item-desc">Recorded session on emotional wellbeing, resilience, coping, and everyday mental health check-ins.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Podcast Appearance</span>
+                        <div class="media-item-title">Mental Health and Youth</div>
+                        <div class="media-item-meta">nFocus — Episode 18 — featuring Dr. Ewa Antczak and Karim Mirshahi — January 2021</div>
+                        <p class="media-item-desc">Discussion focused on youth mental health, psychological wellbeing, and community support.</p>
+                    </div>
+                </div>
+
+                <div id="podcastsArchive">
+                    <div class="media-list">
+                        <div class="media-item">
+                            <span class="media-item-tag">Podcast Appearance</span>
+                            <div class="media-item-title">How Is Technology Affecting Children Mentally and Physically?</div>
+                            <div class="media-item-meta">Parent Talk with Larissa, Pandemic Series — Episode 7 — October 2020</div>
+                            <p class="media-item-desc">Discussion about children, technology, mental and physical wellbeing, and digital exposure, referencing Talk2Alex.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Podcast Appearance</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/kids-and-the-pandemic/" target="_blank">COVID 19 #3: Kids and the Pandemic</a></div>
+                            <div class="media-item-meta">POLcast — Episode 74 — May 2020</div>
+                            <p class="media-item-desc">Interview on the emotional and psychological effects of the COVID-19 pandemic on children and families.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Radio Interview</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/brian-crombie-with-dr-ewa-j-antczak-on-dealing-with-stress-because-of-covid-19/" target="_blank">Dealing With Stress, Anxiety &amp; Depression During COVID 19</a></div>
+                            <div class="media-item-meta">Brian Crombie Radio Hour — Episode 101 — April 2020</div>
+                            <p class="media-item-desc">Discussion of anxiety, depression, isolation, and coping strategies during the pandemic.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Interview</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/dr-ewa-j-antczak-at-first-name-basis-interview/" target="_blank">Dr. Ewa J. Antczak at First Name Basis</a></div>
+                            <div class="media-item-meta">With Dr. Ashok Bhattacharya and Emily Bhattacharya</div>
+                            <p class="media-item-desc">Introduced Talk2Alex and explored psychological support for children facing anxiety, depression, and self-esteem difficulties. Original publication date not currently available from the archived source.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 5: Expert Commentary, Resources & Q&A -->
+            <div class="media-category">
+                <h3 class="media-category-title media-category-toggle" onclick="toggleMediaCategory('expertBody', this)">Expert Commentary, Resources &amp; Q&amp;A <span class="media-toggle-icon">▼</span></h3>
+                <div class="media-archive-content" id="expertBody">
+                <div class="media-list">
+                    <div class="media-item">
+                        <span class="media-item-tag">Expert Q&amp;A Series</span>
+                        <div class="media-item-title">Back to School: Expert Questions &amp; Answers</div>
+                        <div class="media-item-meta">Core Centre — Dr. Ewa J. Antczak — eight-part series</div>
+                        <p class="media-item-desc">An eight-part expert Q&amp;A series covering the school year from a behavioural and emotional-wellbeing lens.</p>
+                        <ul class="media-sub-list">
+                            <li><a href="https://corecentre.ca/back-to-school-questions-answers-01/" target="_blank">Part 1 — Transitioning from summer mode to school mode</a></li>
+                            <li><a href="https://corecentre.ca/back-to-school-questions-answers-02/" target="_blank">Part 2 — Establishing effective school routines</a></li>
+                            <li><a href="https://corecentre.ca/back-to-school-questions-answers-03/" target="_blank">Part 3 — Friendships, balance, and conflict</a></li>
+                            <li><a href="https://corecentre.ca/back-to-school-questions-answers-04/" target="_blank">Part 4 — Helping children make friends</a></li>
+                            <li><a href="https://corecentre.ca/back-to-school-questions-answers-05/" target="_blank">Part 5 — Emotional regulation and academic pressure</a></li>
+                            <li><a href="https://corecentre.ca/back-to-school-questions-answers-06/" target="_blank">Part 6 — Homework and study habits</a></li>
+                            <li><a href="https://corecentre.ca/back-to-school-questions-answers-07/" target="_blank">Part 7 — Getting support when a child struggles</a></li>
+                            <li><a href="https://corecentre.ca/back-to-school-questions-answers-08/" target="_blank">Part 8 — Making school more enjoyable</a></li>
+                        </ul>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Expert Resource</span>
+                        <div class="media-item-title"><a href="https://corecentre.ca/addressing-the-youth-mental-health-crisis-what-parents-can-do/" target="_blank">Addressing the Youth Mental Health Crisis: What Parents Can Do</a></div>
+                        <div class="media-item-meta">Core Centre</div>
+                        <p class="media-item-desc">Warning signs, parental support strategies, and how to access help for youth mental health concerns.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Expert Resource</span>
+                        <div class="media-item-title"><a href="https://corecentre.ca/establishing-healthy-boundaries-for-video-game-use/" target="_blank">Establishing Healthy Boundaries for Video Game Use</a></div>
+                        <div class="media-item-meta">Core Centre</div>
+                        <p class="media-item-desc">Guidance on gaming boundaries, family routines, and healthy gaming behaviour for parents.</p>
+                    </div>
+                    <div class="media-item">
+                        <span class="media-item-tag">Expert Resource</span>
+                        <div class="media-item-title"><a href="https://corecentre.ca/keeping-kids-engaged-the-old-fashioned-way/" target="_blank">Keeping Kids Engaged the Old-Fashioned Way</a></div>
+                        <div class="media-item-meta">Core Centre</div>
+                        <p class="media-item-desc">Ideas for children's engagement and family connection as alternatives to excessive screen time.</p>
+                    </div>
+                </div>
+
+                <div id="expertArchive">
+                    <div class="media-list">
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/loneliness-help-and-advice/" target="_blank">Loneliness. Help And Advice</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Coping strategies for loneliness, social connection, and emotional wellbeing.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/anxiety-parents-and-children/" target="_blank">Anxiety. Parents and Children.</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Guidance for parents supporting children through anxiety.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/giftedness-resources/" target="_blank">Giftedness Resources</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Resources for gifted children, youth, families, and educators.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/scholarships-and-grants-for-gifted-students/" target="_blank">Scholarships and Grants for Gifted Students</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Funding resources for gifted youth and their families.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/supercharge-your-learning/" target="_blank">Supercharge Your Learning</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Study strategies and learning performance guidance for students.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/how-the-idealme-program-can-help-gifted-youth-reach-their-full-potential/" target="_blank">How the IdealMe Program Can Help Gifted Youth Reach Their Full Potential</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Describes how the IdealMe program supports gifted development and personal growth.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/gaming-therapy-gt/" target="_blank">Gaming Therapy (GT)</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Introductory resource explaining the relationship between gaming and psychological wellbeing.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/gamer-therapy-for-stress-and-pressure/" target="_blank">Gamer Therapy for Stress and Pressure</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Addresses performance pressure, expectations, and coping in competitive gaming.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/gamer-therapy-for-gamer-blues/" target="_blank">Gamer Therapy for Gamer Blues</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Addresses low mood and mental wellbeing in gaming contexts.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/social-media-stressed/" target="_blank">Social Media Stressed?</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Addresses anxiety and stress associated with social media use.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/gamer-therapy-for-gaming-rage/" target="_blank">Gamer Therapy for Gaming Rage</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Addresses anger, frustration, and emotional regulation tied to gaming behaviour.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/gamer-therapy-for-managing-conflicts-related-to-gaming/" target="_blank">Gamer Therapy for Managing Conflicts Related to Gaming</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Addresses family conflict, communication, and boundaries around gaming.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/gamer-therapy-for-gaming-addiction/" target="_blank">Gamer Therapy for Gaming Addiction</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Addresses problematic gaming behaviour and family-centred psychological support.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/tips-for-therapists-to-make-gaming-therapy-most-effective/" target="_blank">Tips For Therapists To Make Gaming Therapy Most Effective</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Professional guidance for therapists working with gamers.</p>
+                        </div>
+                        <div class="media-item">
+                            <span class="media-item-tag">Expert Resource</span>
+                            <div class="media-item-title"><a href="https://corecentre.ca/tips-for-gamers-to-make-gamer-therapy-most-effective/" target="_blank">Tips For Gamers To Make Gamer Therapy Most Effective</a></div>
+                            <div class="media-item-meta">Core Centre</div>
+                            <p class="media-item-desc">Guidance for gamers on engaging effectively in gaming-focused psychological support.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 6: Media Background -->
+            <div class="media-category" style="text-align: center; margin-bottom: 1rem;">
+                <h3 class="media-category-title">Media Background</h3>
+                <p class="media-category-sub">Dr. Antczak's experience with public communication extends beyond interviews and authored articles and includes editorial and journalism roles earlier in her career: Director &amp; Associate Editor, Toronto Waterfront Magazine (2018–2022), and Journalist, Polish Radio &amp; Television (PR III), Warsaw — both listed under Professional Experience above.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="contact" style="background: var(--navy);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Explore</span>
+                <h2 class="section-title" style="color: var(--soft-white);">Explore <span class="gradient-text" style="color: var(--gold);">My Work</span></h2>
+                <p style="color: var(--muted-on-navy); max-width: 600px; margin: 0 auto;">
+                    From behavioural AI to psychological care, discover the organizations and platforms where this work comes to life.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <a href="https://www.felixahealth.com" target="_blank" class="contact-card">
+                    <h3>
+                        <img src="Felixa logo.jpg" class="contact-icon"> Felixa Health
+                    </h3>
+                    <p class="contact-card-desc">Behavioural AI helping organizations build safer, healthier digital spaces.</p>
+                </a>
+
+                <a href="https://felixavalidate.netlify.app/" target="_blank" class="contact-card">
+                    <h3>
+                        <img src="Felixa logo.jpg" class="contact-icon"> Felixa Validate
+                    </h3>
+                    <p class="contact-card-desc">Human-grounded validation for how AI interprets and evaluates behaviour.</p>
+                </a>
+
+                <a href="https://felixagaming.com" target="_blank" class="contact-card">
+                    <h3>
+                        <img src="Felixa logo.jpg" class="contact-icon"> Gaming Inquiries
+                    </h3>
+                    <p class="contact-card-desc">Partnering with gaming studios and communities on player safety and wellbeing.</p>
+                </a>
+
+                <a href="https://idealmesolutions.com" target="_blank" class="contact-card">
+                    <h3>
+                        IdealMe
+                    </h3>
+                    <p class="contact-card-desc">Supporting gifted youth and families in reaching their full potential.</p>
+                </a>
+                
+                <a href="https://corecentre.ca" target="_blank" class="contact-card">
+                    <h3>
+                        <img src="Logo Core.png" class="contact-icon"> Core Centre
+                    </h3>
+                    <p class="contact-card-desc">Psychological services supporting children, youth, and families.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+   <footer>
+    <p style="color: var(--muted-on-navy); margin-bottom: 0.5rem;">
+        © 2026 Dr. Ewa J. Antczak. All rights reserved.
+    </p>
+    <p style="color: var(--muted-on-navy); font-size: 0.875rem;">
+        <!-- Optional extra text or empty -->
+    </p>
+
+    <div class="footer-links" aria-label="Contact links">
+        <a href="mailto:ewa@felixagaming.com" title="Email">
+            <img src="email.webp" alt="Email" class="footer-icon">
+        </a>
+        <a href="tel:+16475184357" title="Phone: 647 518 4357">
+            <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="padding: 6px; box-sizing: border-box;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+        </a>
+        <a href="https://linkedin.com/in/ewaantczak" target="_blank" rel="noopener" title="LinkedIn">
+            <img src="IN.png.webp" alt="LinkedIn" class="footer-icon">
+        </a>
+    </div>
+</footer>
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Speaking table show more/less functionality
+        function initializeSpeakingTable() {
+            const tableRows = document.querySelectorAll('.speaking-table tbody tr');
+            tableRows.forEach((row, index) => {
+                if (index > 5) {
+                    row.classList.add('hidden-row');
+                }
+            });
+        }
+
+        function toggleSpeakingRows() {
+            const tableRows = document.querySelectorAll('.speaking-table tbody tr');
+            const btn = document.getElementById('showMoreBtn');
+            const hiddenRows = document.querySelectorAll('.speaking-table tbody tr.hidden-row');
+            
+            if (hiddenRows.length > 0) {
+                tableRows.forEach(row => {
+                    row.classList.remove('hidden-row');
+                });
+                btn.innerHTML = 'View Less ▲';
+            } else {
+                tableRows.forEach((row, index) => {
+                    if (index > 5) {
+                        row.classList.add('hidden-row');
+                    }
+                });
+                btn.innerHTML = 'View Full Speaking History ▼';
+                setTimeout(() => {
+                    document.querySelector('.speaking-table').scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'nearest' 
+                    });
+                }, 100);
+            }
+        }
+
+        // Research table show more/less functionality
+        function initializeResearchTable() {
+            const tableRows = document.querySelectorAll('.research-table tbody tr');
+            tableRows.forEach((row, index) => {
+                if (index > 3) {
+                    row.classList.add('hidden-row');
+                }
+            });
+        }
+
+        function toggleResearchRows() {
+            const tableRows = document.querySelectorAll('.research-table tbody tr');
+            const btn = document.getElementById('showMoreResearchBtn');
+            const hiddenRows = document.querySelectorAll('.research-table tbody tr.hidden-row');
+            
+            if (hiddenRows.length > 0) {
+                tableRows.forEach(row => {
+                    row.classList.remove('hidden-row');
+                });
+                btn.innerHTML = 'Show Less ▲';
+            } else {
+                tableRows.forEach((row, index) => {
+                    if (index > 3) {
+                        row.classList.add('hidden-row');
+                    }
+                });
+                btn.innerHTML = 'Show More ▼';
+                setTimeout(() => {
+                    document.querySelector('.research-table').scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'nearest' 
+                    });
+                }, 100);
+            }
+        }
+
+        // Publications table show more/less functionality
+        function initializePublicationsTable() {
+            const tableRows = document.querySelectorAll('.publications-table tbody tr');
+            tableRows.forEach((row, index) => {
+                if (index > 3) {
+                    row.classList.add('hidden-row');
+                }
+            });
+        }
+
+        function togglePublicationsRows() {
+            const tableRows = document.querySelectorAll('.publications-table tbody tr');
+            const btn = document.getElementById('showMorePublicationsBtn');
+            const hiddenRows = document.querySelectorAll('.publications-table tbody tr.hidden-row');
+            
+            if (hiddenRows.length > 0) {
+                tableRows.forEach(row => {
+                    row.classList.remove('hidden-row');
+                });
+                btn.innerHTML = 'Show Less ▲';
+            } else {
+                tableRows.forEach((row, index) => {
+                    if (index > 3) {
+                        row.classList.add('hidden-row');
+                    }
+                });
+                btn.innerHTML = 'Show More ▼';
+                setTimeout(() => {
+                    document.querySelector('.publications-table').scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'nearest' 
+                    });
+                }, 100);
+            }
+        }
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            initializeSpeakingTable();
+            initializeResearchTable();
+            initializePublicationsTable();
+        });
+
+        // Modal functions for talk description
+        function openTalkModal() {
+            document.getElementById('talkModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeTalkModal() {
+            document.getElementById('talkModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Modal functions for toxicity talk
+        function openToxicityModal() {
+            document.getElementById('toxicityModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeToxicityModal() {
+            document.getElementById('toxicityModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside of it
+        function closeModalOnBackdrop(event) {
+            const talkModal = document.getElementById('talkModal');
+            const toxicityModal = document.getElementById('toxicityModal');
+            if (event.target === talkModal) {
+                closeTalkModal();
+            }
+            if (event.target === toxicityModal) {
+                closeToxicityModal();
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeTalkModal();
+                closeToxicityModal();
+            }
+        });
+   // Media section: generic expand/collapse for archive panels (reuses the same animation pattern as About's Read More)
+   function toggleMediaArchive(contentId, btnId, label) {
+       const panel = document.getElementById(contentId);
+       const btn = document.getElementById(btnId);
+       if (!panel || !btn) return;
+       const isOpen = panel.classList.contains('open');
+       if (isOpen) {
+           panel.style.maxHeight = panel.scrollHeight + 'px';
+           requestAnimationFrame(() => {
+               panel.style.maxHeight = '0px';
+               panel.style.opacity = '0';
+           });
+           panel.classList.remove('open');
+           btn.textContent = 'View More ' + label + ' ▼';
+       } else {
+           panel.classList.add('open');
+           panel.style.maxHeight = panel.scrollHeight + 'px';
+           panel.style.opacity = '1';
+           btn.textContent = 'View Less ▲';
+           setTimeout(() => {
+               panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+           }, 100);
+       }
+   }
+
+   // Media section: click the category heading to expand/collapse its full content
+   function toggleMediaCategory(contentId, headingEl) {
+       const panel = document.getElementById(contentId);
+       if (!panel || !headingEl) return;
+       const isOpen = panel.classList.contains('open');
+       if (isOpen) {
+           panel.style.maxHeight = panel.scrollHeight + 'px';
+           requestAnimationFrame(() => {
+               panel.style.maxHeight = '0px';
+               panel.style.opacity = '0';
+           });
+           panel.classList.remove('open');
+           headingEl.classList.remove('open');
+       } else {
+           panel.classList.add('open');
+           panel.style.maxHeight = panel.scrollHeight + 'px';
+           panel.style.opacity = '1';
+           headingEl.classList.add('open');
+       }
+   }
+
+
+   // Recorded Talks & Video: lazy-load YouTube embed on click (avoids loading all players up front)
+   function playEmbeddedVideo(videoId, wrapId) {
+       const wrap = document.getElementById(wrapId || ('videoWrap-' + videoId));
+       if (!wrap) return;
+       const iframe = document.createElement('iframe');
+       iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+       iframe.setAttribute('frameborder', '0');
+       iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+       iframe.setAttribute('allowfullscreen', '');
+       iframe.setAttribute('title', 'YouTube video player');
+       wrap.innerHTML = '';
+       wrap.appendChild(iframe);
+       wrap.onclick = null;
+   }
+
+   // About section "Read More" accordion (robust)
+(function () {
+  const btn = document.getElementById('aboutReadMore');
+  const panel = document.getElementById('aboutMore');
+  if (!btn || !panel) return;
+
+  // Make sure it starts collapsed
+  panel.style.maxHeight = '0px';
+  panel.style.opacity = '0';
+  panel.style.overflow = 'hidden';
+
+  btn.setAttribute('aria-controls', 'aboutMore');
+  btn.setAttribute('aria-expanded', 'false');
+
+  btn.addEventListener('click', () => {
+    const isOpen = panel.classList.contains('open');
+
+    if (isOpen) {
+      // closing
+      panel.style.maxHeight = panel.scrollHeight + 'px'; // set current so transition works
+      requestAnimationFrame(() => {
+        panel.style.maxHeight = '0px';
+        panel.style.opacity = '0';
+      });
+      panel.classList.remove('open');
+      btn.textContent = 'Read More ▼';
+      btn.setAttribute('aria-expanded', 'false');
+    } else {
+      // opening
+      panel.classList.add('open');
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+      panel.style.opacity = '1';
+      btn.textContent = 'Show Less ▲';
+      btn.setAttribute('aria-expanded', 'true');
+      panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  });
+})();
+
+
+    </script>
+
+    <!-- Talk Description Modal -->
+    <div id="talkModal" class="modal" onclick="closeModalOnBackdrop(event)">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeTalkModal()">&times;</span>
+                <h2>The Psychology and Technology Behind Safer Gaming</h2>
+            </div>
+            <div class="modal-body">
+                <!-- Legend -->
+                <div class="modal-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--navy);"></div>
+                        <span>Seminar</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--gold);"></div>
+                        <span>Workshop</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--gold-dark);"></div>
+                        <span>15/30/60 min Talk</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--champagne);"></div>
+                        <span>Panel</span>
+                    </div>
+                </div>
+
+                <!-- Overview -->
+                <p>We are living in a transformative era where emerging technologies and online platforms have redefined how people connect, collaborate, and play. While these spaces offer valuable opportunities for creativity and community, they also expose users to harmful behaviors including aggression, hate speech, exclusion, and harassment. Ensuring psychological safety within digital environments has become a pressing societal concern.</p>
+
+                <!-- Audience Section -->
+                <div class="modal-section">
+                    <div class="modal-section-title">Who Should Attend</div>
+                    <div>
+                        <span class="audience-tag">Policymakers</span>
+                        <span class="audience-tag">Educators</span>
+                        <span class="audience-tag">Gamers</span>
+                        <span class="audience-tag">Mental Health Practitioners</span>
+                        <span class="audience-tag">Gaming Industry</span>
+                        <span class="audience-tag">Social Media</span>
+                        <span class="audience-tag">Community Managers</span>
+                    </div>
+                </div>
+
+                <p>Together we will explore how behavioral science and AI can reduce toxicity and build stronger trust and safety online. When we protect digital trust, we not only support mental health but also preserve the freedom to play, collaborate, and create without fear of harassment or silencing.</p>
+
+                <!-- Key Topics Section -->
+                <div class="modal-section">
+                    <div class="modal-section-title">Key Topics Covered</div>
+                    <div>
+                        <span class="topic-tag">Behavioral Science</span>
+                        <span class="topic-tag">AI Technology</span>
+                        <span class="topic-tag">Toxicity Reduction</span>
+                        <span class="topic-tag">Empathy & Emotional Intelligence</span>
+                        <span class="topic-tag">Community Health</span>
+                        <span class="topic-tag">Real-time Intervention</span>
+                    </div>
+                </div>
+
+                <p>Drawing on recent validation studies and global data, I will use <strong>live examples and demos</strong> to show how psychological factors (empathy deficits, emotional intelligence, dark triad traits) and environmental drivers (anonymity, toxic modeling, game reward systems) fuel harmful behaviors, and how community health assessments combined with proactive real-time AI interventions can create lasting change.</p>
+
+                <h3>Why This Matters</h3>
+                <p>Almost one in five players experience harassment, and more than two-thirds avoid communities they consider toxic. This results in anxiety, depression, reduced enjoyment for players, and billions in lost revenue for studios. Traditional reactive approaches—bans, reports, moderation—are often too late, too punitive, and lack consistent health metrics.</p>
+
+                <h3>The AI-Powered Solution</h3>
+                <p>Our team of behavioral scientists and AI experts developed an AI-powered behavioral analytics system that integrates machine learning with principles from behavioral psychology. Validation research shows this AI-powered tool aligns with human judgment across multiple languages, scales to all 24 official EU languages, and costs 50% less than traditional moderation tools.</p>
+
+                <h3>What You'll Learn</h3>
+                <ul>
+                    <li><strong>Apply research-based strategies</strong> to design safer, more inclusive digital environments that support well-being and strengthen civic participation</li>
+                    <li><strong>Access AI-driven tools</strong> that evaluate community health and provide compliance reports within minutes</li>
+                    <li><strong>Understand how toxic behaviors</strong> spill over into civic spaces, reducing public trust and discouraging meaningful engagement</li>
+                    <li><strong>Move beyond punishment</strong> to proactive, science-driven strategies that prevent escalation and encourage positive behavior at scale</li>
+                </ul>
+
+                <!-- Expected Outcomes Section -->
+                <div class="modal-section">
+                    <div class="modal-section-title">Expected Outcomes</div>
+                    <div>
+                        <span class="outcome-tag">Mental Health Protection</span>
+                        <span class="outcome-tag">Compliance (DSA, OSA, COPPA)</span>
+                        <span class="outcome-tag">Improved Retention</span>
+                        <span class="outcome-tag">Increased Revenue</span>
+                        <span class="outcome-tag">Stronger Brand Reputation</span>
+                        <span class="outcome-tag">Reduced Churn</span>
+                    </div>
+                </div>
+
+                <p>Attendees will leave with actionable insights and a clear roadmap showing how investing in community health creates both healthier players and healthier bottom lines.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toxicity Modal -->
+    <div id="toxicityModal" class="modal" onclick="closeModalOnBackdrop(event)">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeToxicityModal()">&times;</span>
+                <h2>Reducing Toxicity in Online Gaming Spaces</h2>
+            </div>
+            <div class="modal-body">
+                <!-- Legend -->
+                <div class="modal-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--navy);"></div>
+                        <span>Seminar</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--gold);"></div>
+                        <span>Workshop</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--gold-dark);"></div>
+                        <span>15/30/60 min Talk</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: var(--champagne);"></div>
+                        <span>Panel</span>
+                    </div>
+                </div>
+
+                <!-- Overview -->
+                <p>Did you know that 87% of gamers are bullied online? Toxicity is now the leading reason players quit gaming. What was once designed as a space for creativity, collaboration, and play has, for many, become a source of stress, exclusion, and harm. The need to ensure psychological safety in gaming environments has never been more urgent—for developers, studios, and communities alike.</p>
+
+                <!-- Audience Section -->
+                <div class="modal-section">
+                    <div class="modal-section-title">Who Should Attend</div>
+                    <div>
+                        <span class="audience-tag">Game Developers</span>
+                        <span class="audience-tag">Esports Organizers</span>
+                        <span class="audience-tag">Community Managers</span>
+                        <span class="audience-tag">Trust & Safety Professionals</span>
+                        <span class="audience-tag">Educators</span>
+                        <span class="audience-tag">Policymakers</span>
+                    </div>
+                </div>
+
+                <p>This session is designed for game developers, esports organizers, community managers, trust-and-safety professionals, educators, and policymakers who shape the future of digital play. Together, we will explore how behavioral science and AI-driven technologies can reduce toxicity, enhance player well-being, and strengthen trust across gaming ecosystems.</p>
+
+                <p>Protecting emotional safety online doesn't just promote mental health—it preserves the freedom to play, compete, and create without fear of abuse or silencing.</p>
+
+                <!-- Key Topics Section -->
+                <div class="modal-section">
+                    <div class="modal-section-title">Key Topics Covered</div>
+                    <div>
+                        <span class="topic-tag">Behavioral Science</span>
+                        <span class="topic-tag">AI-Driven Technologies</span>
+                        <span class="topic-tag">Player Well-being</span>
+                        <span class="topic-tag">Empathy Gaps</span>
+                        <span class="topic-tag">Emotional Regulation</span>
+                        <span class="topic-tag">Community Culture Transformation</span>
+                    </div>
+                </div>
+
+                <h3>What You'll Discover</h3>
+                <p>Drawing on recent validation studies and large-scale player data, I will use <strong>live gameplay examples and AI demos</strong> to show how psychological factors (empathy gaps, emotional regulation, dark triad traits) and environmental drivers (anonymity, toxic reward loops, competitive modeling) contribute to harmful behaviors.</p>
+
+                <p>We'll also examine how real-time behavioral analytics and AI-guided interventions can transform community culture from reactive moderation to proactive prevention.</p>
+
+                <!-- Expected Outcomes Section -->
+                <div class="modal-section">
+                    <div class="modal-section-title">Expected Outcomes</div>
+                    <div>
+                        <span class="outcome-tag">Safer Gaming Environments</span>
+                        <span class="outcome-tag">Enhanced Player Retention</span>
+                        <span class="outcome-tag">Reduced Toxicity</span>
+                        <span class="outcome-tag">Proactive Prevention Strategies</span>
+                        <span class="outcome-tag">Healthier Communities</span>
+                        <span class="outcome-tag">Improved Mental Health</span>
+                    </div>
+                </div>
+
+                <p>Attendees will leave with practical strategies to create gaming spaces where players feel safe, respected, and empowered to engage authentically without fear of harassment.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
